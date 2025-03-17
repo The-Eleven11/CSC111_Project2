@@ -3,15 +3,29 @@ import folium
 import networkx as nx
 from math import radians, cos, sin, asin, sqrt
 from itertools import permutations
+import json
 
 app = Flask(__name__)
 
-markers = {
-    "City Hall": (43.65107, -79.347015),
-    "CN Tower": (43.642566, -79.387057),
-    "Downtown Core": (43.6532, -79.3832),
-    "Pearson Airport": (43.6777, -79.6248)
-}
+with open('graph_output.json', 'r') as f:
+    graph_data = json.load(f)
+
+nodes = graph_data['nodes']
+markers = {}
+# markers = {
+#     "City Hall": (43.65107, -79.347015),
+#     "CN Tower": (43.642566, -79.387057),
+#     "Downtown Core": (43.6532, -79.3832),
+#     "Pearson Airport": (43.6777, -79.6248)
+# }
+for node in nodes:
+    lat = node.get('lat')
+    lon = node.get('lng')
+    name = node.get('name')
+
+    # Filter only nodes within Toronto area
+    markers[name] = (lat, lon)
+
 
 
 # Haversine distance
@@ -88,7 +102,7 @@ def index():
     """
     m.get_root().html.add_child(folium.Element(js_code))
 
-    m.save("static/map.html")
+    m.save("templates/map.html")
     return render_template("map.html")
 
 
@@ -119,29 +133,3 @@ def shortest_path():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-@app.route('/shortest_path', methods=['POST'])
-def shortest_path():
-    data = request.get_json()
-    nodes = data.get("nodes", [])
-
-    if len(nodes) < 2:
-        return jsonify({"path": nodes, "message": "Need at least 2 nodes"})
-
-    # Solve approximate TSP (visiting all clicked nodes)
-    min_path = None
-    min_distance = float('inf')
-
-    for perm in permutations(nodes):
-        total = 0
-        for i in range(len(perm) - 1):
-            total += G[perm[i]][perm[i + 1]]['weight']
-        if total < min_distance:
-            min_distance = total
-            min_path = perm
-
-    return jsonify({
-        "path": list(min_path),
-        "distance": round(min_distance, 2)
-    })
