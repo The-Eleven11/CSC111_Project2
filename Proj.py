@@ -101,6 +101,73 @@ class Graph:
         """Initialize an empty graph (no vertices or edges)."""
         self._vertices = {}
 
+    def dijkstra_path(self, start: Any, end: Any) -> Optional[list[Any]]:
+        import heapq
+        if start not in self._vertices or end not in self._vertices:
+            return None
+
+        distances = {item: float('inf') for item in self._vertices}
+        prev = {item: None for item in self._vertices}
+        distances[start] = 0
+        heap = [(0, start)]
+
+        while heap:
+            dist, current = heapq.heappop(heap)
+            if current == end:
+                break
+            current_vertex = self._vertices[current]
+            for neighbour in current_vertex.neighbours:
+                cost = current_vertex.neighbours[neighbour][0]
+                alt = dist + cost
+                if alt < distances[neighbour.item]:
+                    distances[neighbour.item] = alt
+                    prev[neighbour.item] = current
+                    heapq.heappush(heap, (alt, neighbour.item))
+
+        path = []
+        node = end
+        while node:
+            path.insert(0, node)
+            node = prev[node]
+
+        return path if path and path[0] == start else None
+
+    def greedy_tsp_with_adjacent_paths(self, start: Any, nodes: list[Any]) -> tuple[list[Any], int]:
+        """Greedy TSP that includes intermediate adjacent paths when nodes aren't directly connected."""
+        unvisited = set(nodes)
+        full_path = [start]
+        total_distance = 0
+        unvisited.remove(start)
+        current = start
+
+        while unvisited:
+            nearest = None
+            nearest_dist = float('inf')
+            nearest_path = []
+
+            for candidate in unvisited:
+                path = self.dijkstra_path(current, candidate)
+                if path:
+                    dist = self.comp_path(path)
+                    if dist < nearest_dist:
+                        nearest = candidate
+                        nearest_dist = dist
+                        nearest_path = path
+
+            if nearest is None:
+                break  # no path to any remaining node
+
+            # Add path (skip duplicate current node)
+            if full_path and nearest_path[0] == full_path[-1]:
+                nearest_path = nearest_path[1:]
+
+            full_path += nearest_path
+            total_distance += nearest_dist
+            unvisited.remove(nearest)
+            current = nearest
+
+        return full_path, total_distance
+
     def add_vertex(self, item: Any) -> None:
         """Add a vertex with the given item to this graph.
 
@@ -109,31 +176,6 @@ class Graph:
         the neighbour is deflaut to be empty
         """
         self._vertices[item] = _Vertex(item, {})
-
-    def find_path(self, start: Any, end: Any) -> Optional[list[Any]]:
-        """Return a valid path from start to end using BFS traversal (shortest in hops)."""
-        from collections import deque
-        if start not in self._vertices or end not in self._vertices:
-            return None
-
-        visited = set()
-        queue = deque([[start]])
-
-        while queue:
-            path = queue.popleft()
-            node = path[-1]
-
-            if node == end:
-                return path
-
-            if node not in visited:
-                visited.add(node)
-                neighbours = self.get_neighbours(node)
-                for neighbour in neighbours:
-                    if neighbour not in visited:
-                        new_path = list(path) + [neighbour]
-                        queue.append(new_path)
-        return None
 
     def add_edge(self, item1: Any, item2: Any, weight: int, path: Optional[list] = None) -> None:
         """Add an edge between the two vertices with the given items in this graph.
@@ -414,44 +456,15 @@ def shortest_path():
     selected = data.get("nodes", [])
 
     if len(selected) < 2:
-        return jsonify({
-            "path": selected,
-            "distance": 0,
-            "message": "❗ Select at least 2 markers."
-        })
+        return jsonify({"path": selected, "distance": 0, "message": "❗ Select at least 2 markers."})
 
-    total_path = []
-    total_distance = 0
-
-    for i in range(len(selected) - 1):
-        start = selected[i]
-        end = selected[i + 1]
-
-        path = graph.find_path(start, end)
-        if not path:
-            return jsonify({
-                "path": total_path,
-                "distance": total_distance,
-                "message": f"❌ Cannot find a path between {start} and {end}."
-            })
-
-        if total_path:
-            path = path[1:]  # avoid duplicating node between segments
-        total_path += path
-
-    try:
-        total_distance = graph.comp_path(total_path)
-    except (ValueError, KeyError):
-        return jsonify({
-            "path": total_path,
-            "distance": 0,
-            "message": "❌ Path was built, but comp_path failed. Some edges may be missing."
-        })
+    start = selected[0]
+    tsp_path, distance = graph.greedy_tsp_with_adjacent_paths(start, selected)
 
     return jsonify({
-        "path": total_path,
-        "distance": round(total_distance, 2),
-        "message": "✅ Valid path auto-built using adjacent nodes."
+        "path": tsp_path,
+        "distance": round(distance, 2),
+        "message": "✅ Greedy path with adjacent routing."
     })
 
 
