@@ -362,8 +362,6 @@ class Graph:
             start_point_vertex = simp_comp_graph._vertices[next_point.item]
         return path
 
-
-
     def dijkstra(self, start: Any) -> dict:
         """
         to transform a graph into a dictionary about start to all other point's path
