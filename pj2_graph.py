@@ -301,7 +301,6 @@ class Graph:
         paths = [self.dijkstra(item) for item in self._vertices]
 
 
-
     def dijkstra(self, start: Any) -> dict:
         """
         to transform a graph into a dictionary about start to all other point's path
