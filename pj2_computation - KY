@@ -1,0 +1,173 @@
+from __future__ import annotations
+from typing import Any, Optional
+
+class _Vertex:
+    """A vertex in a graph.
+
+    Instance Attributes:
+        - item: The data stored in this vertex.
+        - neighbours: The vertices that are adjacent to this vertex.
+            replace to a dictionary:
+            key of dict is the neighbour _Vertex
+            the value of dict is tuple of corresponding weight and list of _Vertex between these two _Vertex (empty for
+                neighbour)
+
+    Representation Invariants:
+        - self not in self.neighbours
+        - all(self in u.neighbours for u in self.neighbours)
+    """
+    item: Any
+    neighbours: dict[_Vertex: tuple[int, list[Any]]]
+
+    def __init__(self, item: Any, neighbours: dict[_Vertex: tuple[int, list[Any]]]) -> None:
+        """Initialize a new vertex with the given item and neighbours."""
+        self.item = item
+        self.neighbours = neighbours
+
+    # method to make this class hashable, so that it can be used in set and dict
+    def __hash__(self):
+        return hash(self.item)
+
+    def __eq__(self, other):
+        return isinstance(other, _Vertex) and self.item == other.item
+
+class Graph:
+    """A graph.
+
+    Representation Invariants:
+        - all(item == self._vertices[item].item for item in self._vertices)
+    """
+    # Private Instance Attributes:
+    #     - _vertices:
+    #         A collection of the vertices contained in this graph.
+    #         Maps item to _Vertex object.
+    _vertices: dict[Any, _Vertex]
+
+    def __init__(self) -> None:
+        """Initialize an empty graph (no vertices or edges)."""
+        self._vertices = {}
+
+    def add_vertex(self, item: Any) -> None:
+        """Add a vertex with the given item to this graph.
+
+        The new vertex is not adjacent to any other vertices.
+
+        the neighbour is default to be empty
+        """
+        self._vertices[item] = _Vertex(item, {})
+
+    def add_edge(self, item1: Any, item2: Any, weight: int, path: Optional[list] = None) -> None:
+        """Add an edge between the two vertices with the given items in this graph.
+
+        Raise a ValueError if item1 or item2 do not appear as vertices in this graph.
+
+        Preconditions:
+            - item1 != item2
+        """
+        if item1 in self._vertices and item2 in self._vertices:
+            v1 = self._vertices[item1]
+            v2 = self._vertices[item2]
+
+            # Add the new edge
+            path = {} if not path else path
+            v1.neighbours[v2] = (weight, path)
+            v2.neighbours[v1] = (weight, path)
+        else:
+            # We didn't find an existing vertex for both items.
+            raise ValueError
+
+    def adjacent(self, item1: Any, item2: Any) -> bool:
+        """Return whether item1 and item2 are adjacent vertices in this graph.
+
+        Return False if item1 or item2 do not appear as vertices in this graph.
+        """
+        if item1 in self._vertices and item2 in self._vertices:
+            v1 = self._vertices[item1]
+            return any(v2.item == item2 for v2 in v1.neighbours)
+        else:
+            # We didn't find an existing vertex for both items.
+            return False
+
+    def get_neighbours(self, item: Any) -> set:
+        """Return a set of the neighbours of the given item.
+
+        Note that the *items* are returned, not the _Vertex objects themselves.
+
+        Raise a ValueError if item does not appear as a vertex in this graph.
+        """
+        if item in self._vertices:
+            v = self._vertices[item]
+            return {neighbour.item for neighbour in v.neighbours}
+        else:
+            raise ValueError
+
+####################################################################################################
+
+    def verify_path(self, items: list) -> bool:
+        """Return whether the given items form a path in this graph.
+
+        Recall that a path is a sequence of distinct vertices v_0, v_1, ..., v_k
+        such that every consecutive pair of vertices is adjacent.
+
+        Note that you are given the ITEMS, not _Vertex objects.
+        That means you'll either need to perform a dictionary lookup in self._vertices
+        yourself, or pass the items to other Graph methods.
+
+        Return False when the given items have duplicates, or when at least one of the
+        items do not appear as a vertex in this graph. You may use try-except statements
+        (see Section 10.6 of the Course Notes), but this is not required to implement
+        this method.
+
+        Preconditions:
+            - items != []
+
+        >>> example_graph = Graph()
+        >>> example_graph.add_vertex(10)
+        >>> example_graph.add_vertex(20)
+        >>> example_graph.add_vertex(30)
+        >>> example_graph.verify_path([10, 20, 30, 40])
+        False
+        >>> example_graph.verify_path([10, 20, 30, 20])
+        False
+        """
+        if len(items) != len(set(items)):
+            return False
+
+        for i in range(len(items) - 1):
+            if items[i] not in self._vertices or items[i + 1] not in self._vertices:
+                return False
+
+            v1 = self._vertices[items[i]]
+            v2 = self._vertices[items[i + 1]]
+            if v2 not in v1.neighbours:
+                return False
+
+        return True
+
+    def add_all_edges(self, edges: set[tuple[Any, Any]]) -> None:
+        """Add all given edges to this graph.
+
+        Each element of edges is a tuple (x, y), representing the edge {x, y}.
+        If an object in a given edge isn't represented by a vertex in this graph,
+        add a new vertex containing the object to this graph before adding the edge.
+        We strongly encourage you to make use of the Graph methods defined above.
+
+        This method should NOT raise any ValueErrors.
+
+        Preconditions:
+        - all(edge[0] != edge[1] for edge in edges)
+
+        >>> example_graph = Graph()
+        >>> example_edges = {(1, 2), (1, 3), (3, 4)}
+        >>> example_graph.add_all_edges(example_edges)
+        >>> example_graph.get_neighbours(1) == {2, 3}
+        True
+        >>> example_graph.get_neighbours(3) == {1, 4}
+        True
+        """
+        for item1, item2 in edges:
+            if item1 not in self._vertices:
+                self.add_vertex(item1)
+            if item2 not in self._vertices:
+                self.add_vertex(item2)
+            self.add_edge(item1, item2, 1)
