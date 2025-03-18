@@ -283,10 +283,3 @@ class Graph:
                 part_length = vertex1.neighbours[vertex2][0]
                 length_so_far += part_length
         return length_so_far
-
-    def dijkstra_path(self, item: Any) -> dict[Any: list[Any]]:
-        """
-        return a dictionary
-        key of dictionary is the item that connected to item
-        value is list of path that is the shortest to connect the item
-        """
