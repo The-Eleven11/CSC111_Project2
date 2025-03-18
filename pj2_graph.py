@@ -283,3 +283,87 @@ class Graph:
                 part_length = vertex1.neighbours[vertex2][0]
                 length_so_far += part_length
         return length_so_far
+
+    """
+    desecription: 
+        always take the shortest way between two destinations
+    exact steps:
+        1. construct a complete graph, using dijkstra to construct the weight between two non-adjacent vertices
+        2. take the smallest way to go
+        3. stop until every destination is reached
+    """
+
+    def greedy_dijkstra(self) -> list:
+        """
+        input the graph firstly, and transform it as a complete graph
+        """
+
+    def dijkstra(self, start: Any) -> dict:
+        """
+        to transform a graph into a dictionary about start to all other point's path
+        Precondition:
+        - start in graph
+
+        >>> g = Graph()
+        >>> g.add_vertex('A')
+        >>> g.add_vertex('B')
+        >>> g.add_vertex('C')
+        >>> g.add_vertex('D')
+
+        >>> g.add_edge('A', 'B', 1)
+        >>> g.add_edge('B', 'C', 2)
+        >>> g.add_edge('C', 'D', 1)
+        >>> g.add_edge('A', 'C', 4)
+
+        >>> shortest_paths = g.dijkstra('A')
+        >>> shortest_paths['A']
+        ['A']
+        >>> shortest_paths['B']
+        ['A', 'B']
+        >>> shortest_paths['C']
+        ['A', 'B', 'C']
+        >>> shortest_paths['D']
+        ['A', 'B', 'C', 'D']
+
+        """
+        if start not in self._vertices:
+            raise ValueError("Start vertex not found in graph.")
+
+        # Step 1: Initialize distances and previous nodes
+        shortest_distances = {vertex: float('inf') for vertex in self._vertices}
+        previous_nodes = {vertex: None for vertex in self._vertices}
+        shortest_distances[start] = 0
+
+        # Set of unvisited nodes
+        unvisited = set(self._vertices.keys())
+
+        while unvisited:
+            # Select the vertex with the smallest known distance
+            current = min(unvisited, key=lambda vertex: shortest_distances[vertex])
+
+            # If the smallest distance is still infinity, break (remaining nodes are unreachable)
+            if shortest_distances[current] == float('inf'):
+                break
+
+            # Process each neighbor of the current vertex
+            for neighbor, (weight, _) in self._vertices[current].neighbours.items():
+                new_distance = shortest_distances[current] + weight
+                if new_distance < shortest_distances[neighbor.item]:
+                    shortest_distances[neighbor.item] = new_distance
+                    previous_nodes[neighbor.item] = current  # Track path
+
+            # Mark the node as visited
+            unvisited.remove(current)
+
+        # Step 2: Build paths dictionary
+        paths = {}
+        for destination in self._vertices:
+            path = []
+            current = destination
+            while current is not None:
+                path.append(current)
+                current = previous_nodes[current]
+            path.reverse()
+            paths[destination] = path if path[0] == start else None  # Ensure valid path
+
+        return paths
