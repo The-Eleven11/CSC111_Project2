@@ -297,6 +297,10 @@ class Graph:
         """
         input the graph firstly, and transform it as a complete graph
         """
+        # list of all path to other point
+        paths = [self.dijkstra(item) for item in self._vertices]
+
+
 
     def dijkstra(self, start: Any) -> dict:
         """
@@ -310,6 +314,7 @@ class Graph:
         >>> g.add_vertex('C')
         >>> g.add_vertex('D')
 
+        # linear example
         >>> g.add_edge('A', 'B', 1)
         >>> g.add_edge('B', 'C', 2)
         >>> g.add_edge('C', 'D', 1)
@@ -320,11 +325,54 @@ class Graph:
         ['A']
         >>> shortest_paths['B']
         ['A', 'B']
+        >>> g.comp_path(shortest_paths['B'])
+        1
         >>> shortest_paths['C']
         ['A', 'B', 'C']
+        >>> g.comp_path(shortest_paths['C'])
+        3
         >>> shortest_paths['D']
         ['A', 'B', 'C', 'D']
 
+        # complex method
+        >>> g = Graph()
+        >>> g.add_vertex('A')
+        >>> g.add_vertex('B')
+        >>> g.add_vertex('C')
+        >>> g.add_vertex('D')
+        >>> g.add_vertex('E')
+        >>> g.add_vertex('F')
+        >>> g.add_vertex('G')
+
+        # Adding edges with different weights
+        >>> g.add_edge('A', 'B', 2)
+        >>> g.add_edge('A', 'C', 5)
+        >>> g.add_edge('B', 'D', 1)
+        >>> g.add_edge('B', 'E', 3)
+        >>> g.add_edge('C', 'E', 2)
+        >>> g.add_edge('C', 'F', 6)
+        >>> g.add_edge('D', 'G', 4)
+        >>> g.add_edge('E', 'G', 1)
+        >>> g.add_edge('F', 'G', 3)
+
+        >>> shortest_paths = g.dijkstra('A')
+
+        >>> shortest_paths['A']
+        ['A']
+        >>> shortest_paths['B']
+        ['A', 'B']
+        >>> shortest_paths['C']
+        ['A', 'C']
+        >>> shortest_paths['D']
+        ['A', 'B', 'D']
+        >>> shortest_paths['E']
+        ['A', 'B', 'E']
+        >>> shortest_paths['F']
+        ['A', 'B', 'E', 'G', 'F']
+        >>> shortest_paths['G']
+        ['A', 'B', 'E', 'G']
+        >>> g.comp_path(shortest_paths['G'])
+        6
         """
         if start not in self._vertices:
             raise ValueError("Start vertex not found in graph.")
