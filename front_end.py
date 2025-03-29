@@ -143,7 +143,7 @@ class Graph:
 
 # ===== Load Graph from JSON =====
 
-with open('graph_output.json', 'r') as f:
+with open('graph.json', 'r') as f:
     graph_data = json.load(f)
 
 nodes = graph_data['nodes']
