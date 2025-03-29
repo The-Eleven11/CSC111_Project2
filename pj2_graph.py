@@ -84,6 +84,27 @@ class _Vertex:
 
         return connected_items
 
+    def get_nearest_path_unvisited(self, visited: set) -> tuple:
+        """
+        to return the closest neighbour that is not in visited,
+        a tuple (vertex.item, path)
+        >>> g = Graph()
+        >>> g.add_vertex('A')
+        >>> g.add_vertex('B')
+        >>> g.add_vertex('C')
+        >>> g.add_edge('A', 'B', 2)
+        >>> g.add_edge('A', 'C', 5)
+
+        # unfinished test
+        """
+        nearest = float('inf')
+        result = ()     # used for store vertex data
+        for neighbour in self.neighbours:
+            if self.neighbours[neighbour][0] < nearest and neighbour.item not in visited:
+                nearest = self.neighbours[neighbour][0]
+                result = neighbour, self.neighbours[neighbour][1]
+        return result
+
 
 class Graph:
     """A graph.
@@ -284,6 +305,7 @@ class Graph:
                 length_so_far += part_length
         return length_so_far
 
+    # method 1
     """
     desecription: 
         always take the shortest way between two destinations
@@ -293,38 +315,109 @@ class Graph:
         3. stop until every destination is reached
     """
 
-    def greedy_dijkstra(self) -> list:
+    def greedy_dijkstra(self, start: Any, targets: list[Any]) -> list:
         """
-        input the graph firstly, and transform it as a complete graph
+        input the graph firstly, and transform it as a complete graph, only targets are comprehensively to be passed
+        path start at 'start'
+        >>> g = Graph()
+        >>> g.add_vertex('A')
+        >>> g.add_vertex('B')
+        >>> g.add_vertex('C')
+        >>> g.add_vertex('D')
+        >>> g.add_vertex('E')
+        >>> g.add_vertex('F')
+        >>> g.add_vertex('G')
+        >>> g.add_edge('A', 'B', 2)
+        >>> g.add_edge('A', 'C', 5)
+        >>> g.add_edge('B', 'D', 1)
+        >>> g.add_edge('B', 'E', 3)
+        >>> g.add_edge('C', 'E', 2)
+        >>> g.add_edge('C', 'F', 6)
+        >>> g.add_edge('D', 'G', 4)
+        >>> g.add_edge('E', 'G', 1)
+        >>> g.add_edge('F', 'G', 3)
+        >>> g.greedy_dijkstra('A', ['A', 'B', 'C'])
+        ['A', 'B', 'E', 'C']
+        >>> g.comp_path(g.greedy_dijkstra('A', ['A', 'B', 'C']))
+        7
+
+        >>> g2 = Graph()
+        >>> g.add_vertex('A')
+        >>> g.add_vertex('B')
+        >>> g.add_vertex('C')
+        >>> g.add_edge('A', 'B', 2)
+        >>> g.add_edge('A', 'C', 5)
+        >>> g.greedy_dijkstra('A', ['A', 'B', 'C'])
+        ['A', 'B', 'A', 'C']
+        >>> g.comp_path(g.greedy_dijkstra('A', ['A', 'B', 'C']))
+        9
         """
+        # using method to get the simplified complete graph based on targets
+        simp_comp_graph = self.generate_complete_graph(targets)
+        # start from the first vertex in simp_comp_graph, move to the nearest unreached vertex
+        path = [start]
+        visited = {start}
+        start_point_vertex = simp_comp_graph._vertices[start]
+        while not all(x in visited for x in targets):
+            next_point, new_path = start_point_vertex.get_nearest_path_unvisited(visited)
+            visited.add(next_point.item)
+            path.extend(new_path)
+            path.append(next_point.item)
+            start_point_vertex = simp_comp_graph._vertices[next_point.item]
+        return path
+
+    def get_Vertex(self, item: Any) -> _Vertex:
+        """
+        return a vertex according to item, raise ValueError if item not in graph
+        """
+        if item not in self._vertices:
+            raise ValueError
+        return self._vertices[item]
 
     def dijkstra(self, start: Any) -> dict:
         """
         to transform a graph into a dictionary about start to all other point's path
         Precondition:
         - start in graph
-
+        # complex method
         >>> g = Graph()
         >>> g.add_vertex('A')
         >>> g.add_vertex('B')
         >>> g.add_vertex('C')
         >>> g.add_vertex('D')
+        >>> g.add_vertex('E')
+        >>> g.add_vertex('F')
+        >>> g.add_vertex('G')
 
-        >>> g.add_edge('A', 'B', 1)
-        >>> g.add_edge('B', 'C', 2)
-        >>> g.add_edge('C', 'D', 1)
-        >>> g.add_edge('A', 'C', 4)
+        # Adding edges with different weights
+        >>> g.add_edge('A', 'B', 2)
+        >>> g.add_edge('A', 'C', 5)
+        >>> g.add_edge('B', 'D', 1)
+        >>> g.add_edge('B', 'E', 3)
+        >>> g.add_edge('C', 'E', 2)
+        >>> g.add_edge('C', 'F', 6)
+        >>> g.add_edge('D', 'G', 4)
+        >>> g.add_edge('E', 'G', 1)
+        >>> g.add_edge('F', 'G', 3)
 
         >>> shortest_paths = g.dijkstra('A')
+
         >>> shortest_paths['A']
         ['A']
         >>> shortest_paths['B']
         ['A', 'B']
         >>> shortest_paths['C']
-        ['A', 'B', 'C']
+        ['A', 'C']
         >>> shortest_paths['D']
-        ['A', 'B', 'C', 'D']
-
+        ['A', 'B', 'D']
+        >>> shortest_paths['E']
+        ['A', 'B', 'E']
+        >>> shortest_paths['F']
+        ['A', 'B', 'E', 'G', 'F']
+        >>> shortest_paths['G']
+        ['A', 'B', 'E', 'G']
+        >>> g.comp_path(shortest_paths['G'])
+        6
         """
         if start not in self._vertices:
             raise ValueError("Start vertex not found in graph.")
@@ -367,3 +460,84 @@ class Graph:
             paths[destination] = path if path[0] == start else None  # Ensure valid path
 
         return paths
+
+    def simplify_dijkstra(self, targets: list[Any], paths: dict) -> dict:
+        """
+        to return a dict that only contains the target vertices that are required to be reached
+        target is the name of destination (Any), input the target destination and result of dijkstra
+        >>> g = Graph()
+        >>> g.add_vertex('A')
+        >>> g.add_vertex('B')
+        >>> g.add_vertex('C')
+        >>> g.add_vertex('D')
+        >>> g.add_vertex('E')
+        >>> g.add_vertex('F')
+        >>> g.add_vertex('G')
+        >>> g.add_edge('A', 'B', 2)
+        >>> g.add_edge('A', 'C', 5)
+        >>> g.add_edge('B', 'D', 1)
+        >>> g.add_edge('B', 'E', 3)
+        >>> g.add_edge('C', 'E', 2)
+        >>> g.add_edge('C', 'F', 6)
+        >>> g.add_edge('D', 'G', 4)
+        >>> g.add_edge('E', 'G', 1)
+        >>> g.add_edge('F', 'G', 3)
+        >>> target_paths = g.simplify_dijkstra(['A', 'B', 'G'], g.dijkstra('A'))
+        >>> target_paths['A']
+        ['A']
+        >>> target_paths['B']
+        ['A', 'B']
+        >>> target_paths['G']
+        ['A', 'B', 'E', 'G']
+
+        # >>> target_paths['C']
+        # KeyError
+        """
+        new_paths = {}
+        for path in paths:
+            if path in targets:
+                new_paths[path] = paths[path]
+        return new_paths
+
+    def generate_complete_graph(self, targets: list[Any]) -> Graph:
+        """
+        return a new complete graph, according to paths input
+        (dict of dijkstra graph {item: its paths to other targets})
+        >>> g = Graph()
+        >>> g.add_vertex('A')
+        >>> g.add_vertex('B')
+        >>> g.add_vertex('C')
+        >>> g.add_vertex('D')
+        >>> g.add_vertex('E')
+        >>> g.add_vertex('F')
+        >>> g.add_vertex('G')
+        >>> g.add_edge('A', 'B', 2)
+        >>> g.add_edge('A', 'C', 5)
+        >>> g.add_edge('B', 'D', 1)
+        >>> g.add_edge('B', 'E', 3)
+        >>> g.add_edge('C', 'E', 2)
+        >>> g.add_edge('C', 'F', 6)
+        >>> g.add_edge('D', 'G', 4)
+        >>> g.add_edge('E', 'G', 1)
+        >>> g.add_edge('F', 'G', 3)
+        >>> g_g = g.generate_complete_graph(['A', 'B', 'G'])
+        >>> g_g.adjacent('A', 'G')
+        True
+        >>> g_g.adjacent('B', 'G')
+        True
+        >>> g_g.degree('A')
+        2
+        >>> g_g.get_neighbours('A')
+        {'B', 'G'}
+        """
+        paths = {item: self.simplify_dijkstra(targets, self.dijkstra(item)) for item in targets}
+        g = Graph()
+        # firstly add all vertices
+        for item in paths:
+            g.add_vertex(item)
+        # secondly add all edges
+        for item in paths:
+            for target in paths[item]:
+                if target != item:
+                    g.add_edge(item, target, self.comp_path(paths[item][target]), paths[item][target][1: -1])
+        return g
