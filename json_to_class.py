@@ -1,24 +1,25 @@
 import json
-from typing import Any
-from pj2_graph import _Vertex
+from pj2_graph import Graph, _Vertex
 
-def load_graph_from_json(json_path: str) -> dict[str, _Vertex]:
+def load_graph_from_json(json_path: str) -> Graph:
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    name_to_vertex: dict[str, _Vertex] = {}
+    graph = Graph()
+
+    vertices = {}
     for node in data['nodes']:
-        v = _Vertex(item=node['name'])
-        v.neighbours = {}
-        name_to_vertex[node['name']] = v
+        name = node['name']
+        vertices[name] = _Vertex(item=name, neighbours={})
 
     for node in data['nodes']:
-        v = name_to_vertex[node['name']]
+        current = vertices[node['name']]
         for edge in node['edges']:
-            neighbour_name = edge['neighbor']
+            neighbor_name = edge['neighbor']
             distance = edge['distance']
-            neighbour_vertex = name_to_vertex.get(neighbour_name)
-            if neighbour_vertex:
-                v.neighbours[neighbour_vertex] = (distance, [])
+            current.neighbours[vertices[neighbor_name]] = (distance, [])
 
-    return name_to_vertex
+    for name, vertex in vertices.items():
+        graph._vertices[name] = vertex
+
+    return graph
