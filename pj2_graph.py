@@ -305,6 +305,7 @@ class Graph:
                 length_so_far += part_length
         return length_so_far
 
+    # method 1
     """
     desecription: 
         always take the shortest way between two destinations
@@ -337,7 +338,8 @@ class Graph:
         >>> g.add_edge('F', 'G', 3)
         >>> g.greedy_dijkstra('A', ['A', 'B', 'C'])
         ['A', 'B', 'E', 'C']
-
+        >>> g.comp_path(g.greedy_dijkstra('A', ['A', 'B', 'C']))
+        7
 
         >>> g2 = Graph()
         >>> g.add_vertex('A')
@@ -347,6 +349,8 @@ class Graph:
         >>> g.add_edge('A', 'C', 5)
         >>> g.greedy_dijkstra('A', ['A', 'B', 'C'])
         ['A', 'B', 'A', 'C']
+        >>> g.comp_path(g.greedy_dijkstra('A', ['A', 'B', 'C']))
+        9
         """
         # using method to get the simplified complete graph based on targets
         simp_comp_graph = self.generate_complete_graph(targets)
@@ -529,3 +533,14 @@ class Graph:
                 if target != item:
                     g.add_edge(item, target, self.comp_path(paths[item][target]), paths[item][target][1: -1])
         return g
+
+    # method 2
+    """
+    desecription: 
+        always move to point that the rest path is the shortest
+    exact steps:
+        1. construct a complete graph, using dijkstra to construct the weight between two non-adjacent vertices
+        2. compute the sum of result path for all other unvisitied vertices, if move to the nearby vertices,
+        3. move the the lowest sum vertex
+        4. stop until every destination is reached
+    """
