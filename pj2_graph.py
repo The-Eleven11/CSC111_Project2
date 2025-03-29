@@ -366,6 +366,14 @@ class Graph:
             start_point_vertex = simp_comp_graph._vertices[next_point.item]
         return path
 
+    def get_Vertex(self, item: Any) -> _Vertex:
+        """
+        return a vertex according to item, raise ValueError if item not in graph
+        """
+        if item not in self._vertices:
+            raise ValueError
+        return self._vertices[item]
+
     def dijkstra(self, start: Any) -> dict:
         """
         to transform a graph into a dictionary about start to all other point's path
@@ -533,14 +541,3 @@ class Graph:
                 if target != item:
                     g.add_edge(item, target, self.comp_path(paths[item][target]), paths[item][target][1: -1])
         return g
-
-    # method 2
-    """
-    desecription: 
-        always move to point that the rest path is the shortest
-    exact steps:
-        1. construct a complete graph, using dijkstra to construct the weight between two non-adjacent vertices
-        2. compute the sum of result path for all other unvisitied vertices, if move to the nearby vertices,
-        3. move the the lowest sum vertex
-        4. stop until every destination is reached
-    """
