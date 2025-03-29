@@ -1,7 +1,7 @@
 from __future__ import annotations
 from flask import Flask, render_template, request, jsonify
 import folium
-from itertools import permutations
+# from itertools import permutations
 import json
 from typing import Any, Optional
 
@@ -287,8 +287,6 @@ class Graph:
         else:
             return self._vertices[item].get_connected_component(set())
 
-
-
     def in_cycle(self, item: Any) -> bool:
         """Return whether the given item is in a cycle in this graph.
 
@@ -353,6 +351,7 @@ class Graph:
                 length_so_far += part_length
         return length_so_far
 
+
 # -------------------- Flask App --------------------
 
 app = Flask(__name__)
@@ -397,56 +396,113 @@ for edge in edges:
 
 @app.route('/')
 def index():
-    m = folium.Map(location=[43.65107, -79.347015], zoom_start=13)
+    m = folium.Map(location=[43.65107, -79.347015], zoom_start=12)
 
+    # Add markers to map
     for label, (lat, lon) in markers.items():
         popup_html = f"""
-            <b>Marker: {label}</b><br>
-            <button onclick="clickedMarkers.push('{label}'); document.getElementById('selection').innerHTML += '{label} '; console.log('Clicked:', clickedMarkers);">Add This Marker</button>
+            <b>{label}</b><br>
+            <button onclick="clickedMarkers.push('{label}'); document.getElementById('selection').innerHTML += '{label} → '; console.log(clickedMarkers);">Select</button>
         """
-        popup = folium.Popup(popup_html, max_width=250)
+        popup = folium.Popup(popup_html, max_width=300)
         folium.Marker([lat, lon], popup=popup, tooltip=label).add_to(m)
 
-    js_code = """
-        <div style="position:absolute; top:10px; left:10px; z-index:9999; background:white; padding:10px; border-radius:6px; border:1px solid #ccc; font-size:16px;">
-            <div id="selection" style="margin-bottom:8px;"><b>Selected:</b> </div>
-            <div id="result" style="margin-bottom:8px; color:green;"></div>
-            <button onclick="sendClickedNodes()" style="margin-right:5px;">Calculate Path</button>
+    # JS + UI for selection and route drawing
+    js_code = f"""
+        <div style="position:absolute; top:10px; left:10px; z-index:1000; background:white; padding:10px; border:1px solid #ccc; border-radius:5px;">
+            <div id="selection" style="margin-bottom:5px;"><b>Selected:</b> </div>
+            <div id="result" style="margin-bottom:5px;"></div>
+            <button onclick="sendClickedNodes()">Calculate Path</button>
             <button onclick="clearSelection()">Clear</button>
         </div>
+
         <script>
             var clickedMarkers = [];
+            var routeLine = null;
 
-            function sendClickedNodes() {
-                if (clickedMarkers.length < 2) {
+            window.markersDict = {{
+                {','.join(f'"{k}": [{v[0]}, {v[1]}]' for k, v in markers.items())}
+            }};
+
+            function sendClickedNodes() {{
+                if (clickedMarkers.length < 2) {{
                     document.getElementById("result").innerText = "Select at least 2 markers.";
                     return;
-                }
+                }}
 
-                fetch('/shortest_path', {
+                fetch('/shortest_path', {{
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ nodes: clickedMarkers })
-                })
+                    headers: {{ 'Content-Type': 'application/json' }},
+                    body: JSON.stringify({{ nodes: clickedMarkers }})
+                }})
                 .then(response => response.json())
-                .then(data => {
-                    const path = data.path.join(" → ");
+                .then(data => {{
+                    const path = data.path;
                     const dist = data.distance;
-                    const message = data.message || "";
-                    document.getElementById("result").innerHTML =
-                        "📍 <b>Path:</b> " + path + "<br>🧭 <b>Distance:</b> " + dist + " m<br>" + message;
-                });
-            }
+                    const message = data.message;
 
-            function clearSelection() {
+                    document.getElementById("result").innerHTML =
+                        "<b>Path:</b> " + path.join(" → ") +
+                        "<br><b>Distance:</b> " + dist + " m<br>" + message;
+
+                    drawPolyline(path);
+                }});
+            }}
+
+            function clearSelection() {{
                 clickedMarkers = [];
                 document.getElementById("selection").innerHTML = "<b>Selected:</b> ";
                 document.getElementById("result").innerHTML = "";
-            }
+                if (routeLine && window.map) {{
+                    window.map.removeLayer(routeLine);
+                    routeLine = null;
+                }}
+            }}
+
+            function drawPolyline(pathLabels) {{
+                if (!window.markersDict) {{
+                    console.error("markersDict not available");
+                    return;
+                }}
+
+                const coords = pathLabels.map(label => {{
+                    const coord = window.markersDict[label];
+                    if (!coord) console.warn("Missing coordinates for", label);
+                    return coord;
+                }}).filter(Boolean);
+
+                if (!window.map) {{
+                    window.map = window.L && Object.values(window.L).find(m => m instanceof L.Map);
+                }}
+
+                if (routeLine) {{
+                    window.map.removeLayer(routeLine);
+                }}
+
+                routeLine = L.polyline(coords, {{
+                    color: 'blue',
+                    weight: 5
+                }}).addTo(window.map);
+
+                if (routeLine.bringToFront) {{
+                    routeLine.bringToFront();
+                }}
+
+                window.map.fitBounds(routeLine.getBounds());
+            }}
+
+            window.addEventListener('load', function () {{
+                window.map = window.L && Object.values(window.L).find(m => m instanceof L.Map);
+            }});
         </script>
     """
+
+    # Add JS+HTML block to map
     m.get_root().html.add_child(folium.Element(js_code))
+
+    # Save rendered HTML
     m.save("templates/map.html")
+
     return render_template("map.html")
 
 
@@ -466,8 +522,6 @@ def shortest_path():
         "distance": round(distance, 2),
         "message": "✅ Greedy path with adjacent routing."
     })
-
-
 
 
 if __name__ == '__main__':
