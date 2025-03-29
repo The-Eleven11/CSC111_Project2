@@ -25,6 +25,7 @@ exact steps:
     4. stop until every destination is reached
 """
 
+
 def greedy_dijkstra_method2(graph: pj2_graph.Graph, start: Any, destination: list[Any]) -> list:
     """
     as shown above
@@ -35,4 +36,14 @@ def greedy_dijkstra_method2(graph: pj2_graph.Graph, start: Any, destination: lis
     start_point_vertex = simp_comp_graph.get_Vertex(start)
     while not all(x in visited for x in destination):
         next_point, new_path = start_point_vertex.get_nearest_path_unvisited(visited)
+        curr_sum = float('inf')
         for neighbour in graph.get_neighbours(start):
+            sum_so_far = sum([neighbour.neighbours[x][0] for x in graph.get_neighbours(neighbour) if x not in visited])
+            if sum_so_far < curr_sum:
+                next_point = neighbour
+                new_path = start_point_vertex.neighbours[next_point][1]
+        visited.add(next_point.item)
+        path.extend(new_path)
+        path.append(next_point.item)
+        start_point_vertex = simp_comp_graph.get_Vertex(next_point.item)
+    return path
