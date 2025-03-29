@@ -351,6 +351,10 @@ class Graph:
                 length_so_far += part_length
         return length_so_far
 
+    @property
+    def vertices(self):
+        return self._vertices
+
 
 # -------------------- Flask App --------------------
 
@@ -388,7 +392,7 @@ for node in nodes:
 
 for edge in edges:
     f, t = edge["from"], edge["to"]
-    if f in graph._vertices and t in graph._vertices:
+    if f in graph.vertices and t in graph.vertices:
         graph.add_edge(f, t, edge["distance"], edge["path"])
 
 
