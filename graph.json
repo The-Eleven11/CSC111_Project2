@@ -1,0 +1,5536 @@
+{
+    "nodes": [
+        {
+            "name": "1 Spadina Crescent",
+            "lat": 43.6599213,
+            "lng": -79.4012705,
+            "edges": [
+                {
+                    "neighbor": "Koffler House",
+                    "distance": 274,
+                    "duration": 244,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Bancroft Building",
+                    "distance": 339,
+                    "duration": 297,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Earth Sciences Centre",
+                    "distance": 340,
+                    "duration": 298,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 351,
+                    "duration": 288,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "455 Spadina Avenue",
+                    "distance": 360,
+                    "duration": 295,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "30 Charles Street West",
+            "lat": 43.6686391,
+            "lng": -79.3871151,
+            "edges": [
+                {
+                    "neighbor": "35 Charles Street West",
+                    "distance": 125,
+                    "duration": 98,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rowell Jackman Hall",
+                    "distance": 337,
+                    "duration": 287,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 417,
+                    "duration": 352,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Brennan Hall",
+                    "distance": 432,
+                    "duration": 365,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Elmsley Hall",
+                    "distance": 443,
+                    "duration": 373,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "35 Charles Street West",
+            "lat": 43.6679853,
+            "lng": -79.3873267,
+            "edges": [
+                {
+                    "neighbor": "30 Charles Street West",
+                    "distance": 125,
+                    "duration": 107,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rowell Jackman Hall",
+                    "distance": 382,
+                    "duration": 323,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Odette (Louis) Hall",
+                    "distance": 446,
+                    "duration": 376,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 462,
+                    "duration": 389,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Brennan Hall",
+                    "distance": 467,
+                    "duration": 387,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "39 Queen's Park Cres East",
+            "lat": 43.6643288,
+            "lng": -79.3897846,
+            "edges": [
+                {
+                    "neighbor": "90 Wellesley Street West",
+                    "distance": 8,
+                    "duration": 6,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 118,
+                    "duration": 96,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 109,
+                    "duration": 91,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Muzzo Family Alumni Hall",
+                    "distance": 114,
+                    "duration": 92,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 156,
+                    "duration": 131,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "40 Sussex Avenue",
+            "lat": 43.6650147,
+            "lng": -79.4018617,
+            "edges": [
+                {
+                    "neighbor": "665 Spadina Avenue",
+                    "distance": 96,
+                    "duration": 78,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fasken Martineau Building",
+                    "distance": 128,
+                    "duration": 104,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Graduate House",
+                    "distance": 135,
+                    "duration": 110,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Luella Massey Studio Theatre",
+                    "distance": 106,
+                    "duration": 87,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "703 Spadina Avenue",
+                    "distance": 183,
+                    "duration": 154,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "59 Queen's Park Cres East",
+            "lat": 43.66564229999999,
+            "lng": -79.3910211,
+            "edges": [
+                {
+                    "neighbor": "E.J. Pratt Library",
+                    "distance": 132,
+                    "duration": 112,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 141,
+                    "duration": 111,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 123,
+                    "duration": 98,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 130,
+                    "duration": 103,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Muzzo Family Alumni Hall",
+                    "distance": 149,
+                    "duration": 119,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 43,
+                    "duration": 34,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Toronto School of Theology",
+                    "distance": 126,
+                    "duration": 100,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "90 Wellesley Street West",
+            "lat": 43.6641333,
+            "lng": -79.389529,
+            "edges": [
+                {
+                    "neighbor": "39 Queen's Park Cres East",
+                    "distance": 8,
+                    "duration": 6,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 126,
+                    "duration": 102,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 117,
+                    "duration": 97,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Muzzo Family Alumni Hall",
+                    "distance": 121,
+                    "duration": 98,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 164,
+                    "duration": 137,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "88 College Street",
+            "lat": 43.66076959999999,
+            "lng": -79.3877784,
+            "edges": [
+                {
+                    "neighbor": "Banting Institute",
+                    "distance": 143,
+                    "duration": 115,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Schwartz Reisman Innovation Centre",
+                    "distance": 174,
+                    "duration": 142,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "700 University Avenue",
+                    "distance": 361,
+                    "duration": 314,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Leslie L. Dan Pharmacy Building",
+                    "distance": 392,
+                    "duration": 337,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 456,
+                    "duration": 394,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "97 St. George Street",
+            "lat": 43.6649322,
+            "lng": -79.3984001,
+            "edges": [
+                {
+                    "neighbor": "Claude T. Bissell Building",
+                    "distance": 103,
+                    "duration": 96,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College",
+                    "distance": 116,
+                    "duration": 110,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 128,
+                    "duration": 108,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 41,
+                    "duration": 37,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Thomas Fisher Rare Book Library",
+                    "distance": 122,
+                    "duration": 105,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "121 St. George Street",
+            "lat": 29.8940621,
+            "lng": -81.3126566,
+            "edges": [
+                {
+                    "neighbor": "162 St. George Street",
+                    "distance": 258,
+                    "duration": 210,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "More House",
+                    "distance": 562231,
+                    "duration": 457834,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Convocation Hall",
+                    "distance": 562691,
+                    "duration": 458068,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wilson Hall",
+                    "distance": 570272,
+                    "duration": 462022,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Borden Building",
+                    "distance": 857348,
+                    "duration": 694954,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "162 St. George Street",
+            "lat": 29.8931398,
+            "lng": -81.31303050000001,
+            "edges": [
+                {
+                    "neighbor": "121 St. George Street",
+                    "distance": 258,
+                    "duration": 210,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "More House",
+                    "distance": 562489,
+                    "duration": 458044,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Convocation Hall",
+                    "distance": 562949,
+                    "duration": 458278,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wilson Hall",
+                    "distance": 570530,
+                    "duration": 462232,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Borden Building",
+                    "distance": 857606,
+                    "duration": 695164,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "215 Huron Street",
+            "lat": 43.6592175,
+            "lng": -79.3983375,
+            "edges": [
+                {
+                    "neighbor": "Bahen Centre for Information Technology",
+                    "distance": 150,
+                    "duration": 125,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fields Institute for Research in Math Science",
+                    "distance": 160,
+                    "duration": 126,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "455 Spadina Avenue",
+                    "distance": 199,
+                    "duration": 161,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "229 College Street",
+                    "distance": 205,
+                    "duration": 172,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Earth Sciences Centre",
+                    "distance": 235,
+                    "duration": 207,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "229 College Street",
+            "lat": 43.6580635,
+            "lng": -79.3974257,
+            "edges": [
+                {
+                    "neighbor": "Fields Institute for Research in Math Science",
+                    "distance": 123,
+                    "duration": 111,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Koffler Student Services Centre",
+                    "distance": 159,
+                    "duration": 141,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 205,
+                    "duration": 182,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wallberg Building",
+                    "distance": 228,
+                    "duration": 206,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Bahen Centre for Information Technology",
+                    "distance": 250,
+                    "duration": 222,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "246 Bloor Street West",
+            "lat": 43.6472735,
+            "lng": -79.5127803,
+            "edges": [
+                {
+                    "neighbor": "Loretto College",
+                    "distance": 7911,
+                    "duration": 6676,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "371 Bloor Street West",
+                    "distance": 9344,
+                    "duration": 7797,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "703 Spadina Avenue",
+                    "distance": 9393,
+                    "duration": 7832,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Dr. Eric Jackman Institute of Child Study",
+                    "distance": 9457,
+                    "duration": 7859,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "665 Spadina Avenue",
+                    "distance": 9503,
+                    "duration": 7919,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "254-256 McCaul Street",
+            "lat": 43.6585742,
+            "lng": -79.3936061,
+            "edges": [
+                {
+                    "neighbor": "263 McCaul Street",
+                    "distance": 91,
+                    "duration": 75,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 99,
+                    "duration": 93,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wallberg Building",
+                    "distance": 211,
+                    "duration": 186,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 217,
+                    "duration": 193,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sandford Fleming Building",
+                    "distance": 254,
+                    "duration": 225,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "263 McCaul Street",
+            "lat": 43.658779,
+            "lng": -79.3925086,
+            "edges": [
+                {
+                    "neighbor": "254-256 McCaul Street",
+                    "distance": 91,
+                    "duration": 77,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 135,
+                    "duration": 121,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wallberg Building",
+                    "distance": 246,
+                    "duration": 214,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 253,
+                    "duration": 221,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "700 University Avenue",
+                    "distance": 287,
+                    "duration": 231,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "370 Huron Street",
+            "lat": 40.7335125,
+            "lng": -73.9496966,
+            "edges": [
+                {
+                    "neighbor": "School of Graduate Studies",
+                    "distance": 78573,
+                    "duration": 63954,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Founders House",
+                    "distance": 106449,
+                    "duration": 89311,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Trinity College",
+                    "distance": 179916,
+                    "duration": 150020,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sussex Court",
+                    "distance": 287530,
+                    "duration": 236736,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Regis College",
+                    "distance": 327226,
+                    "duration": 272093,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "455 Spadina Avenue",
+            "lat": 43.6582407,
+            "lng": -79.3998872,
+            "edges": [
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 199,
+                    "duration": 165,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "229 College Street",
+                    "distance": 276,
+                    "duration": 230,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fields Institute for Research in Math Science",
+                    "distance": 288,
+                    "duration": 232,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Koffler House",
+                    "distance": 301,
+                    "duration": 264,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Koffler Student Services Centre",
+                    "distance": 324,
+                    "duration": 262,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "665 Spadina Avenue",
+            "lat": 43.6644095,
+            "lng": -79.4022719,
+            "edges": [
+                {
+                    "neighbor": "40 Sussex Avenue",
+                    "distance": 96,
+                    "duration": 80,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fasken Martineau Building",
+                    "distance": 78,
+                    "duration": 61,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "703 Spadina Avenue",
+                    "distance": 159,
+                    "duration": 137,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Graduate House",
+                    "distance": 159,
+                    "duration": 127,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Warren Stevens Building",
+                    "distance": 183,
+                    "duration": 155,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "700 University Avenue",
+            "lat": 43.6591917,
+            "lng": -79.3910104,
+            "edges": [
+                {
+                    "neighbor": "Leslie L. Dan Pharmacy Building",
+                    "distance": 148,
+                    "duration": 132,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Schwartz Reisman Innovation Centre",
+                    "distance": 186,
+                    "duration": 181,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 212,
+                    "duration": 189,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "FitzGerald Building",
+                    "distance": 236,
+                    "duration": 207,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Banting Institute",
+                    "distance": 256,
+                    "duration": 238,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "703 Spadina Avenue",
+            "lat": 43.6657277,
+            "lng": -79.4027231,
+            "edges": [
+                {
+                    "neighbor": "665 Spadina Avenue",
+                    "distance": 159,
+                    "duration": 126,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "40 Sussex Avenue",
+                    "distance": 183,
+                    "duration": 145,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fasken Martineau Building",
+                    "distance": 237,
+                    "duration": 187,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Luella Massey Studio Theatre",
+                    "distance": 252,
+                    "duration": 203,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "371 Bloor Street West",
+                    "distance": 266,
+                    "duration": 220,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "371 Bloor Street West",
+            "lat": 43.6667366,
+            "lng": -79.40223809999999,
+            "edges": [
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 182,
+                    "duration": 160,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College Residence",
+                    "distance": 254,
+                    "duration": 215,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "703 Spadina Avenue",
+                    "distance": 266,
+                    "duration": 209,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Enrolment Services",
+                    "distance": 267,
+                    "duration": 226,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Continuing Studies",
+                    "distance": 271,
+                    "duration": 218,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Annesley Hall",
+            "lat": 53.065582,
+            "lng": -1.250818,
+            "edges": [
+                {
+                    "neighbor": "St. Hilda's College",
+                    "distance": 165550,
+                    "duration": 135041,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wycliffe College",
+                    "distance": 184041,
+                    "duration": 151157,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Residence",
+                    "distance": 290008,
+                    "duration": 239691,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "St. Basil's Church",
+                    "distance": 349637,
+                    "duration": 288435,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Windle House",
+                    "distance": 8772368,
+                    "duration": 6932877,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Back Campus Fields",
+            "lat": 43.6638836,
+            "lng": -79.3963567,
+            "edges": [
+                {
+                    "neighbor": "Soldiers' Tower",
+                    "distance": 186,
+                    "duration": 148,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Thomas Fisher Rare Book Library",
+                    "distance": 211,
+                    "duration": 191,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Massey College",
+                    "distance": 243,
+                    "duration": 211,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "97 St. George Street",
+                    "distance": 267,
+                    "duration": 228,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Louis B. Stewart Observatory",
+                    "distance": 274,
+                    "duration": 218,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Bahen Centre for Information Technology",
+            "lat": 43.65980450000001,
+            "lng": -79.39729799999999,
+            "edges": [
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 150,
+                    "duration": 118,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fields Institute for Research in Math Science",
+                    "distance": 194,
+                    "duration": 147,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 215,
+                    "duration": 182,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "229 College Street",
+                    "distance": 250,
+                    "duration": 201,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "45 St. George Street",
+                    "distance": 268,
+                    "duration": 224,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Bancroft Building",
+            "lat": 43.6609208,
+            "lng": -79.3997766,
+            "edges": [
+                {
+                    "neighbor": "Earth Sciences Centre",
+                    "distance": 1,
+                    "duration": 1,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Koffler House",
+                    "distance": 121,
+                    "duration": 99,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 236,
+                    "duration": 197,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wetmore Hall",
+                    "distance": 236,
+                    "duration": 196,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Bahen Centre for Information Technology",
+                    "distance": 283,
+                    "duration": 240,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Banting Institute",
+            "lat": 43.6604812,
+            "lng": -79.3886581,
+            "edges": [
+                {
+                    "neighbor": "88 College Street",
+                    "distance": 143,
+                    "duration": 118,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Schwartz Reisman Innovation Centre",
+                    "distance": 69,
+                    "duration": 57,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "700 University Avenue",
+                    "distance": 256,
+                    "duration": 234,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Leslie L. Dan Pharmacy Building",
+                    "distance": 286,
+                    "duration": 252,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 351,
+                    "duration": 309,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Birge-Carnegie Library",
+            "lat": 43.6671086,
+            "lng": -79.3928699,
+            "edges": [
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 117,
+                    "duration": 93,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Student Centre",
+                    "distance": 74,
+                    "duration": 60,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 39,
+                    "duration": 31,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "E.J. Pratt Library",
+                    "distance": 160,
+                    "duration": 120,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Northrop Frye Hall",
+                    "distance": 174,
+                    "duration": 132,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Borden Building",
+            "lat": 35.7922525,
+            "lng": -78.65004069999999,
+            "edges": [
+                {
+                    "neighbor": "Student Commons",
+                    "distance": 256717,
+                    "duration": 208962,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wilson Hall",
+                    "distance": 292637,
+                    "duration": 237159,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sullivan House",
+                    "distance": 414312,
+                    "duration": 341942,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sussex Court",
+                    "distance": 601742,
+                    "duration": 490146,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Carr Hall",
+                    "distance": 651261,
+                    "duration": 539457,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Brennan Hall",
+            "lat": 43.6663742,
+            "lng": -79.3897593,
+            "edges": [
+                {
+                    "neighbor": "Elmsley Hall",
+                    "distance": 100,
+                    "duration": 78,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Odette (Louis) Hall",
+                    "distance": 85,
+                    "duration": 66,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Phelan House",
+                    "distance": 74,
+                    "duration": 53,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sam Sorbara Hall",
+                    "distance": 113,
+                    "duration": 84,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 158,
+                    "duration": 117,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Burwash Hall",
+            "lat": 43.66740799999999,
+            "lng": -79.3916126,
+            "edges": [
+                {
+                    "neighbor": "Birge-Carnegie Library",
+                    "distance": 117,
+                    "duration": 94,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Student Centre",
+                    "distance": 126,
+                    "duration": 101,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 131,
+                    "duration": 105,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rowell Jackman Hall",
+                    "distance": 134,
+                    "duration": 106,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "E.J. Pratt Library",
+                    "distance": 160,
+                    "duration": 120,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Burwash Residence",
+            "lat": 50.998835,
+            "lng": 0.388428,
+            "edges": [
+                {
+                    "neighbor": "St. Hilda's College",
+                    "distance": 162495,
+                    "duration": 134548,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wycliffe College",
+                    "distance": 236057,
+                    "duration": 194178,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Annesley Hall",
+                    "distance": 291034,
+                    "duration": 240954,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "St. Basil's Church",
+                    "distance": 314693,
+                    "duration": 260208,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Windle House",
+                    "distance": 8630535,
+                    "duration": 6921335,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "C. David Naylor Building",
+            "lat": 43.660469,
+            "lng": -79.3918499,
+            "edges": [
+                {
+                    "neighbor": "FitzGerald Building",
+                    "distance": 64,
+                    "duration": 49,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Leslie L. Dan Pharmacy Building",
+                    "distance": 111,
+                    "duration": 83,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McMurrich Building",
+                    "distance": 107,
+                    "duration": 91,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 188,
+                    "duration": 149,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "700 University Avenue",
+                    "distance": 212,
+                    "duration": 169,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Canadiana Gallery",
+            "lat": 43.66188330000001,
+            "lng": -79.392928,
+            "edges": [
+                {
+                    "neighbor": "Gerstein Science Information Centre",
+                    "distance": 157,
+                    "duration": 145,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McMurrich Building",
+                    "distance": 203,
+                    "duration": 176,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 247,
+                    "duration": 205,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Simcoe Hall",
+                    "distance": 276,
+                    "duration": 233,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "FitzGerald Building",
+                    "distance": 287,
+                    "duration": 237,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Carr Hall",
+            "lat": 39.3228928,
+            "lng": -82.0982535,
+            "edges": [
+                {
+                    "neighbor": "Faculty Club",
+                    "distance": 128259,
+                    "duration": 105529,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Health Sciences Building",
+                    "distance": 238333,
+                    "duration": 194307,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Stephenson House",
+                    "distance": 430303,
+                    "duration": 351494,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sullivan House",
+                    "distance": 442593,
+                    "duration": 366389,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sussex Court",
+                    "distance": 574646,
+                    "duration": 476384,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Chestnut Residence",
+            "lat": 43.6545063,
+            "lng": -79.3855665,
+            "edges": [
+                {
+                    "neighbor": "Rehabilitation Sciences Building",
+                    "distance": 386,
+                    "duration": 352,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "88 College Street",
+                    "distance": 783,
+                    "duration": 702,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "700 University Avenue",
+                    "distance": 819,
+                    "duration": 722,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Banting Institute",
+                    "distance": 856,
+                    "duration": 760,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Schwartz Reisman Innovation Centre",
+                    "distance": 888,
+                    "duration": 787,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Clara Benson Building",
+            "lat": 43.66301110000001,
+            "lng": -79.40026850000001,
+            "edges": [
+                {
+                    "neighbor": "Ramsay Wright Laboratories",
+                    "distance": 71,
+                    "duration": 58,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Robarts Library",
+                    "distance": 143,
+                    "duration": 128,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wetmore Hall",
+                    "distance": 113,
+                    "duration": 92,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Thomas Fisher Rare Book Library",
+                    "distance": 153,
+                    "duration": 134,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Warren Stevens Building",
+                    "distance": 164,
+                    "duration": 133,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Claude T. Bissell Building",
+            "lat": 43.6649961,
+            "lng": -79.39907579999999,
+            "edges": [
+                {
+                    "neighbor": "97 St. George Street",
+                    "distance": 103,
+                    "duration": 93,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College",
+                    "distance": 87,
+                    "duration": 74,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 102,
+                    "duration": 96,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 62,
+                    "duration": 61,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Thomas Fisher Rare Book Library",
+                    "distance": 135,
+                    "duration": 104,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College",
+                    "distance": 132,
+                    "duration": 123,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Convocation Hall",
+            "lat": 33.7908359,
+            "lng": -84.32514750000001,
+            "edges": [
+                {
+                    "neighbor": "More House",
+                    "distance": 11350,
+                    "duration": 9718,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wilson Hall",
+                    "distance": 406601,
+                    "duration": 330827,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sullivan House",
+                    "distance": 442719,
+                    "duration": 366007,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "121 St. George Street",
+                    "distance": 562689,
+                    "duration": 456442,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "162 St. George Street",
+                    "distance": 562947,
+                    "duration": 456652,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Cumberland House",
+            "lat": 53.95826599999999,
+            "lng": -102.267444,
+            "edges": [
+                {
+                    "neighbor": "Whitney Hall",
+                    "distance": 1554815,
+                    "duration": 1258331,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Mechanical Engineering Building",
+                    "distance": 2003709,
+                    "duration": 1615939,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Knox College",
+                    "distance": 2179500,
+                    "duration": 1761369,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gage Building",
+                    "distance": 2222966,
+                    "duration": 1794425,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Stephenson House",
+                    "distance": 2566295,
+                    "duration": 2056034,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "D.L. Pratt Building",
+            "lat": 43.6596145,
+            "lng": -79.3947468,
+            "edges": [
+                {
+                    "neighbor": "Engineering Annex",
+                    "distance": 45,
+                    "duration": 36,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Haultain Building",
+                    "distance": 111,
+                    "duration": 91,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 135,
+                    "duration": 110,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rosebrugh Building",
+                    "distance": 146,
+                    "duration": 119,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sandford Fleming Building",
+                    "distance": 65,
+                    "duration": 54,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Terrence Donnelly Centre for Cellular and Biomolecular Research",
+                    "distance": 150,
+                    "duration": 123,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Dentistry Building",
+            "lat": 44.6387795,
+            "lng": -63.58545760000001,
+            "edges": [
+                {
+                    "neighbor": "Emmanuel College",
+                    "distance": 985822,
+                    "duration": 756847,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Regis College",
+                    "distance": 992423,
+                    "duration": 762279,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Trinity College",
+                    "distance": 1129284,
+                    "duration": 875524,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Founders House",
+                    "distance": 1201336,
+                    "duration": 934901,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "370 Huron Street",
+                    "distance": 1307651,
+                    "duration": 1024151,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Dr. Eric Jackman Institute of Child Study",
+            "lat": 43.6696368,
+            "lng": -79.4058658,
+            "edges": [
+                {
+                    "neighbor": "371 Bloor Street West",
+                    "distance": 598,
+                    "duration": 506,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "703 Spadina Avenue",
+                    "distance": 647,
+                    "duration": 541,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Enrolment Services",
+                    "distance": 706,
+                    "duration": 580,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "665 Spadina Avenue",
+                    "distance": 757,
+                    "duration": 628,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 774,
+                    "duration": 640,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "E.J. Pratt Library",
+            "lat": 43.666318,
+            "lng": -79.391286,
+            "edges": [
+                {
+                    "neighbor": "59 Queen's Park Cres East",
+                    "distance": 132,
+                    "duration": 104,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Northrop Frye Hall",
+                    "distance": 48,
+                    "duration": 39,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 111,
+                    "duration": 87,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Birge-Carnegie Library",
+                    "distance": 160,
+                    "duration": 136,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 160,
+                    "duration": 135,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Earth Sciences Centre",
+            "lat": 43.6609659,
+            "lng": -79.3997854,
+            "edges": [
+                {
+                    "neighbor": "Bancroft Building",
+                    "distance": 1,
+                    "duration": 1,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Koffler House",
+                    "distance": 122,
+                    "duration": 100,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 235,
+                    "duration": 196,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wetmore Hall",
+                    "distance": 235,
+                    "duration": 195,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Bahen Centre for Information Technology",
+                    "distance": 282,
+                    "duration": 239,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Edward Johnson Building",
+            "lat": 43.66657319999999,
+            "lng": -79.3946105,
+            "edges": [
+                {
+                    "neighbor": "Flavelle House",
+                    "distance": 188,
+                    "duration": 159,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Falconer Hall",
+                    "distance": 215,
+                    "duration": 179,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 373,
+                    "duration": 325,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lillian Massey Building",
+                    "distance": 373,
+                    "duration": 320,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Back Campus Fields",
+                    "distance": 375,
+                    "duration": 308,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Elmsley Hall",
+            "lat": 43.6666468,
+            "lng": -79.39042119999999,
+            "edges": [
+                {
+                    "neighbor": "Brennan Hall",
+                    "distance": 100,
+                    "duration": 80,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Phelan House",
+                    "distance": 141,
+                    "duration": 109,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 162,
+                    "duration": 123,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 168,
+                    "duration": 126,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 175,
+                    "duration": 131,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Emmanuel College",
+            "lat": 42.340944,
+            "lng": -71.102685,
+            "edges": [
+                {
+                    "neighbor": "Regis College",
+                    "distance": 19778,
+                    "duration": 16710,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Trinity College",
+                    "distance": 164822,
+                    "duration": 136183,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Founders House",
+                    "distance": 232726,
+                    "duration": 192530,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "370 Huron Street",
+                    "distance": 339041,
+                    "duration": 281780,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Graduate Studies",
+                    "distance": 396518,
+                    "duration": 330451,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Engineering Annex",
+            "lat": 43.6596379,
+            "lng": -79.3953321,
+            "edges": [
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 45,
+                    "duration": 36,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Galbraith Building",
+                    "distance": 130,
+                    "duration": 108,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sandford Fleming Building",
+                    "distance": 50,
+                    "duration": 42,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Haultain Building",
+                    "distance": 174,
+                    "duration": 139,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 198,
+                    "duration": 158,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Enrolment Services",
+            "lat": 43.6680596,
+            "lng": -79.400486,
+            "edges": [
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 66,
+                    "duration": 53,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College Residence",
+                    "distance": 143,
+                    "duration": 134,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Continuing Studies",
+                    "distance": 224,
+                    "duration": 188,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "123 St. George Street",
+                    "distance": 224,
+                    "duration": 198,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Ontario Institute for Studies in Education",
+                    "distance": 226,
+                    "duration": 190,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Faculty Club",
+            "lat": 39.9983799,
+            "lng": -83.0126564,
+            "edges": [
+                {
+                    "neighbor": "Carr Hall",
+                    "distance": 128259,
+                    "duration": 105359,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Health Sciences Building",
+                    "distance": 176260,
+                    "duration": 143639,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Stephenson House",
+                    "distance": 309239,
+                    "duration": 251592,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gage Building",
+                    "distance": 490206,
+                    "duration": 397561,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sullivan House",
+                    "distance": 520493,
+                    "duration": 427379,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Falconer Hall",
+            "lat": 43.666691,
+            "lng": -79.3940143,
+            "edges": [
+                {
+                    "neighbor": "Flavelle House",
+                    "distance": 55,
+                    "duration": 44,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 196,
+                    "duration": 168,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Student Centre",
+                    "distance": 204,
+                    "duration": 176,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Edward Johnson Building",
+                    "distance": 215,
+                    "duration": 163,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lillian Massey Building",
+                    "distance": 219,
+                    "duration": 188,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Fasken Martineau Building",
+            "lat": 43.6640789,
+            "lng": -79.4020937,
+            "edges": [
+                {
+                    "neighbor": "40 Sussex Avenue",
+                    "distance": 128,
+                    "duration": 107,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "665 Spadina Avenue",
+                    "distance": 78,
+                    "duration": 64,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Graduate House",
+                    "distance": 82,
+                    "duration": 67,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Luella Massey Studio Theatre",
+                    "distance": 119,
+                    "duration": 97,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Warren Stevens Building",
+                    "distance": 151,
+                    "duration": 131,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Fields Institute for Research in Math Science",
+            "lat": 43.6587275,
+            "lng": -79.39732219999999,
+            "edges": [
+                {
+                    "neighbor": "229 College Street",
+                    "distance": 123,
+                    "duration": 108,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Koffler Student Services Centre",
+                    "distance": 100,
+                    "duration": 82,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 160,
+                    "duration": 135,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Bahen Centre for Information Technology",
+                    "distance": 194,
+                    "duration": 165,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wallberg Building",
+                    "distance": 204,
+                    "duration": 173,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "FitzGerald Building",
+            "lat": 43.6601448,
+            "lng": -79.3923921,
+            "edges": [
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 64,
+                    "duration": 53,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Leslie L. Dan Pharmacy Building",
+                    "distance": 83,
+                    "duration": 63,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McMurrich Building",
+                    "distance": 139,
+                    "duration": 119,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 188,
+                    "duration": 150,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rosebrugh Building",
+                    "distance": 213,
+                    "duration": 171,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Flavelle House",
+            "lat": 43.6660982,
+            "lng": -79.394003,
+            "edges": [
+                {
+                    "neighbor": "Falconer Hall",
+                    "distance": 55,
+                    "duration": 44,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Edward Johnson Building",
+                    "distance": 188,
+                    "duration": 150,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 287,
+                    "duration": 243,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Student Centre",
+                    "distance": 294,
+                    "duration": 250,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lillian Massey Building",
+                    "distance": 309,
+                    "duration": 262,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Founders House",
+            "lat": 41.2212197,
+            "lng": -73.05996,
+            "edges": [
+                {
+                    "neighbor": "Trinity College",
+                    "distance": 73961,
+                    "duration": 61131,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "370 Huron Street",
+                    "distance": 106363,
+                    "duration": 89286,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Graduate Studies",
+                    "distance": 163840,
+                    "duration": 137957,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Regis College",
+                    "distance": 220824,
+                    "duration": 182825,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Emmanuel College",
+                    "distance": 232887,
+                    "duration": 192604,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Gage Building",
+            "lat": 41.8814892,
+            "lng": -87.62489579999999,
+            "edges": [
+                {
+                    "neighbor": "Mechanical Engineering Building",
+                    "distance": 225473,
+                    "duration": 185037,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Knox College",
+                    "distance": 283821,
+                    "duration": 231226,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Stephenson House",
+                    "distance": 440405,
+                    "duration": 358205,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Health Sciences Building",
+                    "distance": 462395,
+                    "duration": 376390,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Faculty Club",
+                    "distance": 490039,
+                    "duration": 397768,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Galbraith Building",
+            "lat": 43.6598852,
+            "lng": -79.39635249999999,
+            "edges": [
+                {
+                    "neighbor": "Engineering Annex",
+                    "distance": 130,
+                    "duration": 105,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 81,
+                    "duration": 68,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "45 St. George Street",
+                    "distance": 63,
+                    "duration": 53,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 175,
+                    "duration": 140,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sandford Fleming Building",
+                    "distance": 180,
+                    "duration": 142,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "George Ignatieff Theatre",
+            "lat": 43.665581,
+            "lng": -79.3971596,
+            "edges": [
+                {
+                    "neighbor": "Gerald Larkin Building",
+                    "distance": 16,
+                    "duration": 12,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Massey College",
+                    "distance": 98,
+                    "duration": 74,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 185,
+                    "duration": 153,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Centre for High Performance Sport",
+                    "distance": 186,
+                    "duration": 161,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Varsity Centre",
+                    "distance": 186,
+                    "duration": 163,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Gerald Larkin Building",
+            "lat": 43.6654766,
+            "lng": -79.3973105,
+            "edges": [
+                {
+                    "neighbor": "George Ignatieff Theatre",
+                    "distance": 16,
+                    "duration": 16,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Massey College",
+                    "distance": 77,
+                    "duration": 58,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 163,
+                    "duration": 136,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Centre for High Performance Sport",
+                    "distance": 167,
+                    "duration": 146,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Varsity Centre",
+                    "distance": 167,
+                    "duration": 148,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Gerstein Science Information Centre",
+            "lat": 43.6620481,
+            "lng": -79.39372190000002,
+            "edges": [
+                {
+                    "neighbor": "Canadiana Gallery",
+                    "distance": 157,
+                    "duration": 138,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Louis B. Stewart Observatory",
+                    "distance": 190,
+                    "duration": 150,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Simcoe Hall",
+                    "distance": 218,
+                    "duration": 172,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McMurrich Building",
+                    "distance": 277,
+                    "duration": 251,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 356,
+                    "duration": 307,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Goldring Centre for High Performance Sport",
+            "lat": 43.6668989,
+            "lng": -79.3982204,
+            "edges": [
+                {
+                    "neighbor": "Munk School of Global Affairs & Public Policy at Trinity",
+                    "distance": 60,
+                    "duration": 50,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Varsity Centre",
+                    "distance": 125,
+                    "duration": 102,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Varsity Centre",
+                    "distance": 125,
+                    "duration": 102,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gerald Larkin Building",
+                    "distance": 167,
+                    "duration": 134,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College Residence",
+                    "distance": 184,
+                    "duration": 153,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Goldring Student Centre",
+            "lat": 43.6676484,
+            "lng": -79.39251639999999,
+            "edges": [
+                {
+                    "neighbor": "Birge-Carnegie Library",
+                    "distance": 74,
+                    "duration": 62,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 126,
+                    "duration": 105,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 35,
+                    "duration": 30,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Margaret Addison Hall",
+                    "distance": 134,
+                    "duration": 110,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rowell Jackman Hall",
+                    "distance": 170,
+                    "duration": 141,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Graduate House",
+            "lat": 43.6635496,
+            "lng": -79.40163129999999,
+            "edges": [
+                {
+                    "neighbor": "40 Sussex Avenue",
+                    "distance": 135,
+                    "duration": 115,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fasken Martineau Building",
+                    "distance": 82,
+                    "duration": 69,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Luella Massey Studio Theatre",
+                    "distance": 126,
+                    "duration": 106,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Warren Stevens Building",
+                    "distance": 138,
+                    "duration": 119,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "665 Spadina Avenue",
+                    "distance": 159,
+                    "duration": 132,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Graduate Students' Union",
+            "lat": 47.5768158,
+            "lng": -52.7312687,
+            "edges": [
+                {
+                    "neighbor": "Dentistry Building",
+                    "distance": 2704919,
+                    "duration": 1883655,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Emmanuel College",
+                    "distance": 2874997,
+                    "duration": 2025139,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Regis College",
+                    "distance": 2881598,
+                    "duration": 2030571,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Trinity College",
+                    "distance": 2961316,
+                    "duration": 2094902,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Founders House",
+                    "distance": 3032366,
+                    "duration": 2152989,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Graham Library",
+            "lat": 33.9599308,
+            "lng": -118.2383401,
+            "edges": [
+                {
+                    "neighbor": "Whitney Hall",
+                    "distance": 1855214,
+                    "duration": 1516250,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Victoria College",
+                    "distance": 2389818,
+                    "duration": 1938356,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Knox College",
+                    "distance": 3015375,
+                    "duration": 2445184,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Cumberland House",
+                    "distance": 3140426,
+                    "duration": 2545059,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Mechanical Engineering Building",
+                    "distance": 3191308,
+                    "duration": 2588018,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Haultain Building",
+            "lat": 43.6599284,
+            "lng": -79.3936461,
+            "edges": [
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 111,
+                    "duration": 90,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 62,
+                    "duration": 49,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rosebrugh Building",
+                    "distance": 73,
+                    "duration": 58,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sandford Fleming Building",
+                    "distance": 124,
+                    "duration": 103,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Terrence Donnelly Centre for Cellular and Biomolecular Research",
+                    "distance": 68,
+                    "duration": 55,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Health Sciences Building",
+            "lat": 39.1389695,
+            "lng": -84.5064936,
+            "edges": [
+                {
+                    "neighbor": "Faculty Club",
+                    "distance": 176260,
+                    "duration": 143697,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Carr Hall",
+                    "distance": 238333,
+                    "duration": 193944,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Stephenson House",
+                    "distance": 427211,
+                    "duration": 348003,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gage Building",
+                    "distance": 462380,
+                    "duration": 375960,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sullivan House",
+                    "distance": 480275,
+                    "duration": 394929,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Innis College",
+            "lat": 43.6655322,
+            "lng": -79.3995474,
+            "edges": [
+                {
+                    "neighbor": "97 St. George Street",
+                    "distance": 116,
+                    "duration": 103,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Claude T. Bissell Building",
+                    "distance": 87,
+                    "duration": 70,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 102,
+                    "duration": 97,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 75,
+                    "duration": 71,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College",
+                    "distance": 133,
+                    "duration": 126,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Innis College Student Residence",
+            "lat": 43.6657764,
+            "lng": -79.39851000000002,
+            "edges": [
+                {
+                    "neighbor": "97 St. George Street",
+                    "distance": 128,
+                    "duration": 100,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Claude T. Bissell Building",
+                    "distance": 99,
+                    "duration": 87,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College",
+                    "distance": 102,
+                    "duration": 98,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 87,
+                    "duration": 68,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College",
+                    "distance": 128,
+                    "duration": 108,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Isabel Bader Theatre",
+            "lat": 43.6673237,
+            "lng": -79.3925648,
+            "edges": [
+                {
+                    "neighbor": "Birge-Carnegie Library",
+                    "distance": 39,
+                    "duration": 32,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 131,
+                    "duration": 105,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Student Centre",
+                    "distance": 35,
+                    "duration": 30,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Margaret Addison Hall",
+                    "distance": 169,
+                    "duration": 139,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "E.J. Pratt Library",
+                    "distance": 174,
+                    "duration": 132,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "John M. Kelly Library",
+            "lat": 43.6649864,
+            "lng": -79.38956710000001,
+            "edges": [
+                {
+                    "neighbor": "39 Queen's Park Cres East",
+                    "distance": 118,
+                    "duration": 93,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "59 Queen's Park Cres East",
+                    "distance": 141,
+                    "duration": 120,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "90 Wellesley Street West",
+                    "distance": 126,
+                    "duration": 99,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 78,
+                    "duration": 68,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 9,
+                    "duration": 9,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Muzzo Family Alumni Hall",
+                    "distance": 48,
+                    "duration": 39,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Phelan House",
+                    "distance": 112,
+                    "duration": 98,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sam Sorbara Hall",
+                    "distance": 108,
+                    "duration": 95,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 119,
+                    "duration": 103,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Toronto School of Theology",
+                    "distance": 97,
+                    "duration": 81,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "J. Robert S. Prichard Alumni House",
+            "lat": 43.6621282,
+            "lng": -79.39664859999999,
+            "edges": [
+                {
+                    "neighbor": "Lash Miller Chemical Laboratories",
+                    "distance": 98,
+                    "duration": 88,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Macdonald-Mowat House",
+                    "distance": 138,
+                    "duration": 112,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sir Daniel Wilson Residence",
+                    "distance": 114,
+                    "duration": 92,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Simcoe Hall",
+                    "distance": 179,
+                    "duration": 140,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 235,
+                    "duration": 187,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Jackman Humanities Building",
+            "lat": 43.6677365,
+            "lng": -79.40028819999999,
+            "edges": [
+                {
+                    "neighbor": "Enrolment Services",
+                    "distance": 66,
+                    "duration": 57,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College Residence",
+                    "distance": 72,
+                    "duration": 78,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Ontario Institute for Studies in Education",
+                    "distance": 155,
+                    "duration": 133,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Continuing Studies",
+                    "distance": 158,
+                    "duration": 135,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "123 St. George Street",
+                    "distance": 158,
+                    "duration": 144,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Knox College",
+            "lat": 40.9416992,
+            "lng": -90.3721309,
+            "edges": [
+                {
+                    "neighbor": "Mechanical Engineering Building",
+                    "distance": 281996,
+                    "duration": 228526,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gage Building",
+                    "distance": 283821,
+                    "duration": 230880,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Health Sciences Building",
+                    "distance": 590131,
+                    "duration": 479944,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Faculty Club",
+                    "distance": 679427,
+                    "duration": 550264,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Stephenson House",
+                    "distance": 695519,
+                    "duration": 564585,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Koffler House",
+            "lat": 43.66049810000001,
+            "lng": -79.40078079999999,
+            "edges": [
+                {
+                    "neighbor": "Bancroft Building",
+                    "distance": 121,
+                    "duration": 99,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Earth Sciences Centre",
+                    "distance": 122,
+                    "duration": 100,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "1 Spadina Crescent",
+                    "distance": 274,
+                    "duration": 241,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 292,
+                    "duration": 242,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "455 Spadina Avenue",
+                    "distance": 301,
+                    "duration": 249,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Koffler Student Services Centre",
+            "lat": 43.6589507,
+            "lng": -79.3968771,
+            "edges": [
+                {
+                    "neighbor": "Fields Institute for Research in Math Science",
+                    "distance": 100,
+                    "duration": 84,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "229 College Street",
+                    "distance": 159,
+                    "duration": 139,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wallberg Building",
+                    "distance": 162,
+                    "duration": 138,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Galbraith Building",
+                    "distance": 230,
+                    "duration": 202,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "215 Huron Street",
+                    "distance": 254,
+                    "duration": 212,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Lash Miller Chemical Laboratories",
+            "lat": 43.66178439999999,
+            "lng": -79.3977525,
+            "edges": [
+                {
+                    "neighbor": "J. Robert S. Prichard Alumni House",
+                    "distance": 98,
+                    "duration": 89,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Macdonald-Mowat House",
+                    "distance": 86,
+                    "duration": 80,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sir Daniel Wilson Residence",
+                    "distance": 95,
+                    "duration": 88,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 167,
+                    "duration": 140,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McLennan Physical Laboratories",
+                    "distance": 190,
+                    "duration": 151,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Leslie L. Dan Pharmacy Building",
+            "lat": 43.6599337,
+            "lng": -79.3917123,
+            "edges": [
+                {
+                    "neighbor": "700 University Avenue",
+                    "distance": 148,
+                    "duration": 125,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 111,
+                    "duration": 95,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "FitzGerald Building",
+                    "distance": 83,
+                    "duration": 71,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McMurrich Building",
+                    "distance": 201,
+                    "duration": 172,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 209,
+                    "duration": 168,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Lillian Massey Building",
+            "lat": 43.66846169999999,
+            "lng": -79.3936494,
+            "edges": [
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 216,
+                    "duration": 182,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Falconer Hall",
+                    "distance": 219,
+                    "duration": 177,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Student Centre",
+                    "distance": 224,
+                    "duration": 186,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Birge-Carnegie Library",
+                    "distance": 255,
+                    "duration": 214,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Flavelle House",
+                    "distance": 309,
+                    "duration": 249,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Loretto College",
+            "lat": 43.6759656,
+            "lng": -79.4432956,
+            "edges": [
+                {
+                    "neighbor": "Dr. Eric Jackman Institute of Child Study",
+                    "distance": 3956,
+                    "duration": 3160,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "371 Bloor Street West",
+                    "distance": 4501,
+                    "duration": 3632,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "703 Spadina Avenue",
+                    "distance": 4550,
+                    "duration": 3667,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Enrolment Services",
+                    "distance": 4609,
+                    "duration": 3706,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 4637,
+                    "duration": 3744,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Louis B. Stewart Observatory",
+            "lat": 43.6631778,
+            "lng": -79.3946746,
+            "edges": [
+                {
+                    "neighbor": "Soldiers' Tower",
+                    "distance": 88,
+                    "duration": 72,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gerstein Science Information Centre",
+                    "distance": 190,
+                    "duration": 154,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Back Campus Fields",
+                    "distance": 274,
+                    "duration": 228,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "J. Robert S. Prichard Alumni House",
+                    "distance": 286,
+                    "duration": 232,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sir Daniel Wilson Residence",
+                    "distance": 348,
+                    "duration": 285,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Macdonald-Mowat House",
+            "lat": 43.6617924,
+            "lng": -79.39704309999999,
+            "edges": [
+                {
+                    "neighbor": "J. Robert S. Prichard Alumni House",
+                    "distance": 138,
+                    "duration": 111,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lash Miller Chemical Laboratories",
+                    "distance": 86,
+                    "duration": 79,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sir Daniel Wilson Residence",
+                    "distance": 135,
+                    "duration": 111,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 166,
+                    "duration": 130,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sidney Smith Hall",
+                    "distance": 233,
+                    "duration": 212,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Margaret Addison Hall",
+            "lat": 43.66825559999999,
+            "lng": -79.3924069,
+            "edges": [
+                {
+                    "neighbor": "Goldring Student Centre",
+                    "distance": 134,
+                    "duration": 106,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 169,
+                    "duration": 137,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 182,
+                    "duration": 148,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rowell Jackman Hall",
+                    "distance": 207,
+                    "duration": 166,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Birge-Carnegie Library",
+                    "distance": 208,
+                    "duration": 169,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Maritain House",
+            "lat": 43.6656448,
+            "lng": -79.3899775,
+            "edges": [
+                {
+                    "neighbor": "59 Queen's Park Cres East",
+                    "distance": 123,
+                    "duration": 101,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 78,
+                    "duration": 62,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 7,
+                    "duration": 5,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Muzzo Family Alumni Hall",
+                    "distance": 86,
+                    "duration": 70,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Odette (Louis) Hall",
+                    "distance": 141,
+                    "duration": 122,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Phelan House",
+                    "distance": 91,
+                    "duration": 77,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sam Sorbara Hall",
+                    "distance": 81,
+                    "duration": 68,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 100,
+                    "duration": 83,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Toronto School of Theology",
+                    "distance": 135,
+                    "duration": 111,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Massey College",
+            "lat": 43.6647669,
+            "lng": -79.39723010000002,
+            "edges": [
+                {
+                    "neighbor": "George Ignatieff Theatre",
+                    "distance": 98,
+                    "duration": 90,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gerald Larkin Building",
+                    "distance": 77,
+                    "duration": 69,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 206,
+                    "duration": 173,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Thomas Fisher Rare Book Library",
+                    "distance": 206,
+                    "duration": 175,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Back Campus Fields",
+                    "distance": 243,
+                    "duration": 208,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Max Gluskin House",
+            "lat": 43.6660785,
+            "lng": -79.3999042,
+            "edges": [
+                {
+                    "neighbor": "Innis College",
+                    "distance": 153,
+                    "duration": 123,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 163,
+                    "duration": 134,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Continuing Studies",
+                    "distance": 163,
+                    "duration": 132,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 171,
+                    "duration": 142,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Claude T. Bissell Building",
+                    "distance": 175,
+                    "duration": 135,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "McCorkell House",
+            "lat": 43.6654177,
+            "lng": -79.3898036,
+            "edges": [
+                {
+                    "neighbor": "39 Queen's Park Cres East",
+                    "distance": 109,
+                    "duration": 87,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "59 Queen's Park Cres East",
+                    "distance": 130,
+                    "duration": 107,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "90 Wellesley Street West",
+                    "distance": 117,
+                    "duration": 94,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 9,
+                    "duration": 9,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 7,
+                    "duration": 6,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Muzzo Family Alumni Hall",
+                    "distance": 39,
+                    "duration": 34,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Odette (Louis) Hall",
+                    "distance": 134,
+                    "duration": 117,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Phelan House",
+                    "distance": 84,
+                    "duration": 72,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sam Sorbara Hall",
+                    "distance": 74,
+                    "duration": 63,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 107,
+                    "duration": 89,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Toronto School of Theology",
+                    "distance": 88,
+                    "duration": 76,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "McLennan Physical Laboratories",
+            "lat": 43.6608787,
+            "lng": -79.3984443,
+            "edges": [
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 158,
+                    "duration": 133,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lash Miller Chemical Laboratories",
+                    "distance": 190,
+                    "duration": 151,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "45 St. George Street",
+                    "distance": 211,
+                    "duration": 175,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Galbraith Building",
+                    "distance": 214,
+                    "duration": 175,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Macdonald-Mowat House",
+                    "distance": 282,
+                    "duration": 236,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "McMurrich Building",
+            "lat": 43.6610738,
+            "lng": -79.3928408,
+            "edges": [
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 107,
+                    "duration": 82,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "FitzGerald Building",
+                    "distance": 139,
+                    "duration": 105,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Leslie L. Dan Pharmacy Building",
+                    "distance": 201,
+                    "duration": 151,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Canadiana Gallery",
+                    "distance": 203,
+                    "duration": 166,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 264,
+                    "duration": 205,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Mechanical Engineering Building",
+            "lat": 43.0731405,
+            "lng": -89.4124265,
+            "edges": [
+                {
+                    "neighbor": "Gage Building",
+                    "distance": 225672,
+                    "duration": 184720,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Knox College",
+                    "distance": 282004,
+                    "duration": 228231,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Stephenson House",
+                    "distance": 666034,
+                    "duration": 542843,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Health Sciences Building",
+                    "distance": 688025,
+                    "duration": 561029,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Faculty Club",
+                    "distance": 715668,
+                    "duration": 582406,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "More House",
+            "lat": 33.7473412,
+            "lng": -84.415528,
+            "edges": [
+                {
+                    "neighbor": "Convocation Hall",
+                    "distance": 11350,
+                    "duration": 9459,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wilson Hall",
+                    "distance": 416191,
+                    "duration": 338728,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sullivan House",
+                    "distance": 451084,
+                    "duration": 373031,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "121 St. George Street",
+                    "distance": 562229,
+                    "duration": 456061,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "162 St. George Street",
+                    "distance": 562487,
+                    "duration": 456271,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Lassonde Mining Building",
+            "lat": 43.6595391,
+            "lng": -79.3934143,
+            "edges": [
+                {
+                    "neighbor": "254-256 McCaul Street",
+                    "distance": 99,
+                    "duration": 90,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "263 McCaul Street",
+                    "distance": 135,
+                    "duration": 117,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 135,
+                    "duration": 109,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Haultain Building",
+                    "distance": 62,
+                    "duration": 49,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rosebrugh Building",
+                    "distance": 25,
+                    "duration": 21,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sandford Fleming Building",
+                    "distance": 148,
+                    "duration": 122,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Terrence Donnelly Centre for Cellular and Biomolecular Research",
+                    "distance": 30,
+                    "duration": 24,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wallberg Building",
+                    "distance": 145,
+                    "duration": 120,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Luella Massey Studio Theatre",
+            "lat": 43.6643906,
+            "lng": -79.4011913,
+            "edges": [
+                {
+                    "neighbor": "40 Sussex Avenue",
+                    "distance": 106,
+                    "duration": 90,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fasken Martineau Building",
+                    "distance": 119,
+                    "duration": 97,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Graduate House",
+                    "distance": 126,
+                    "duration": 103,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Robarts Library",
+                    "distance": 136,
+                    "duration": 111,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "665 Spadina Avenue",
+                    "distance": 196,
+                    "duration": 160,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Munk School of Global Affairs & Public Policy at Trinity",
+            "lat": 43.6674571,
+            "lng": -79.39848429999999,
+            "edges": [
+                {
+                    "neighbor": "Goldring Centre for High Performance Sport",
+                    "distance": 60,
+                    "duration": 45,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College Residence",
+                    "distance": 119,
+                    "duration": 98,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Varsity Centre",
+                    "distance": 188,
+                    "duration": 150,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 191,
+                    "duration": 176,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Ontario Institute for Studies in Education",
+                    "distance": 191,
+                    "duration": 166,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Muzzo Family Alumni Hall",
+            "lat": 43.6649125,
+            "lng": -79.3901743,
+            "edges": [
+                {
+                    "neighbor": "39 Queen's Park Cres East",
+                    "distance": 114,
+                    "duration": 89,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "59 Queen's Park Cres East",
+                    "distance": 149,
+                    "duration": 126,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "90 Wellesley Street West",
+                    "distance": 121,
+                    "duration": 95,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 48,
+                    "duration": 38,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 86,
+                    "duration": 74,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 39,
+                    "duration": 33,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 126,
+                    "duration": 108,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Toronto School of Theology",
+                    "distance": 49,
+                    "duration": 42,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+            "lat": 43.6607349,
+            "lng": -79.39661219999999,
+            "edges": [
+                {
+                    "neighbor": "Galbraith Building",
+                    "distance": 81,
+                    "duration": 62,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "45 St. George Street",
+                    "distance": 78,
+                    "duration": 62,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Simcoe Hall",
+                    "distance": 81,
+                    "duration": 64,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McLennan Physical Laboratories",
+                    "distance": 158,
+                    "duration": 140,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Macdonald-Mowat House",
+                    "distance": 166,
+                    "duration": 137,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Northrop Frye Hall",
+            "lat": 43.6663869,
+            "lng": -79.3921484,
+            "edges": [
+                {
+                    "neighbor": "E.J. Pratt Library",
+                    "distance": 48,
+                    "duration": 37,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 159,
+                    "duration": 125,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "59 Queen's Park Cres East",
+                    "distance": 162,
+                    "duration": 127,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Birge-Carnegie Library",
+                    "distance": 174,
+                    "duration": 147,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 174,
+                    "duration": 145,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Odette (Louis) Hall",
+            "lat": 43.6663409,
+            "lng": -79.3887014,
+            "edges": [
+                {
+                    "neighbor": "Brennan Hall",
+                    "distance": 85,
+                    "duration": 67,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 141,
+                    "duration": 104,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 134,
+                    "duration": 98,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Phelan House",
+                    "distance": 61,
+                    "duration": 46,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sam Sorbara Hall",
+                    "distance": 56,
+                    "duration": 40,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Ontario Institute for Studies in Education",
+            "lat": 43.667979,
+            "lng": -79.3983677,
+            "edges": [
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 155,
+                    "duration": 136,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College Residence",
+                    "distance": 169,
+                    "duration": 146,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Munk School of Global Affairs & Public Policy at Trinity",
+                    "distance": 191,
+                    "duration": 164,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Enrolment Services",
+                    "distance": 226,
+                    "duration": 196,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Continuing Studies",
+                    "distance": 250,
+                    "duration": 220,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Phelan House",
+            "lat": 43.6658246,
+            "lng": -79.389391,
+            "edges": [
+                {
+                    "neighbor": "Brennan Hall",
+                    "distance": 74,
+                    "duration": 62,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Elmsley Hall",
+                    "distance": 141,
+                    "duration": 117,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 112,
+                    "duration": 85,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 91,
+                    "duration": 69,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 84,
+                    "duration": 63,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Odette (Louis) Hall",
+                    "distance": 61,
+                    "duration": 53,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sam Sorbara Hall",
+                    "distance": 39,
+                    "duration": 31,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 148,
+                    "duration": 115,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "45 St. George Street",
+            "lat": 43.6603962,
+            "lng": -79.3965291,
+            "edges": [
+                {
+                    "neighbor": "Galbraith Building",
+                    "distance": 63,
+                    "duration": 49,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 78,
+                    "duration": 64,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Engineering Annex",
+                    "distance": 206,
+                    "duration": 163,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McLennan Physical Laboratories",
+                    "distance": 211,
+                    "duration": 184,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lash Miller Chemical Laboratories",
+                    "distance": 221,
+                    "duration": 191,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Ramsay Wright Laboratories",
+            "lat": 43.6631087,
+            "lng": -79.3990019,
+            "edges": [
+                {
+                    "neighbor": "Clara Benson Building",
+                    "distance": 71,
+                    "duration": 60,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Thomas Fisher Rare Book Library",
+                    "distance": 183,
+                    "duration": 157,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wetmore Hall",
+                    "distance": 194,
+                    "duration": 160,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Robarts Library",
+                    "distance": 196,
+                    "duration": 168,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Warren Stevens Building",
+                    "distance": 217,
+                    "duration": 176,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Regis College",
+            "lat": 42.3510169,
+            "lng": -71.3090972,
+            "edges": [
+                {
+                    "neighbor": "Emmanuel College",
+                    "distance": 19778,
+                    "duration": 16255,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Trinity College",
+                    "distance": 152214,
+                    "duration": 125447,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Founders House",
+                    "distance": 220664,
+                    "duration": 182260,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "370 Huron Street",
+                    "distance": 326978,
+                    "duration": 271510,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Graduate Studies",
+                    "distance": 384456,
+                    "duration": 320181,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Rehabilitation Sciences Building",
+            "lat": 43.65556369999999,
+            "lng": -79.3889719,
+            "edges": [
+                {
+                    "neighbor": "Chestnut Residence",
+                    "distance": 386,
+                    "duration": 336,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "700 University Avenue",
+                    "distance": 434,
+                    "duration": 370,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Leslie L. Dan Pharmacy Building",
+                    "distance": 582,
+                    "duration": 502,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Schwartz Reisman Innovation Centre",
+                    "distance": 620,
+                    "duration": 551,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 646,
+                    "duration": 559,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Robarts Library",
+            "lat": 43.664486,
+            "lng": -79.39968999999999,
+            "edges": [
+                {
+                    "neighbor": "Clara Benson Building",
+                    "distance": 143,
+                    "duration": 125,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Luella Massey Studio Theatre",
+                    "distance": 136,
+                    "duration": 113,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Thomas Fisher Rare Book Library",
+                    "distance": 178,
+                    "duration": 141,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Ramsay Wright Laboratories",
+                    "distance": 196,
+                    "duration": 165,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fasken Martineau Building",
+                    "distance": 197,
+                    "duration": 164,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Rosebrugh Building",
+            "lat": 43.6600101,
+            "lng": -79.3931363,
+            "edges": [
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 146,
+                    "duration": 118,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Haultain Building",
+                    "distance": 73,
+                    "duration": 58,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 25,
+                    "duration": 20,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Terrence Donnelly Centre for Cellular and Biomolecular Research",
+                    "distance": 4,
+                    "duration": 3,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sandford Fleming Building",
+                    "distance": 159,
+                    "duration": 130,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Rotman School of Management",
+            "lat": 43.66526169999999,
+            "lng": -79.39865619999999,
+            "edges": [
+                {
+                    "neighbor": "97 St. George Street",
+                    "distance": 41,
+                    "duration": 32,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Claude T. Bissell Building",
+                    "distance": 62,
+                    "duration": 60,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College",
+                    "distance": 75,
+                    "duration": 74,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 87,
+                    "duration": 72,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College",
+                    "distance": 120,
+                    "duration": 103,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Rowell Jackman Hall",
+            "lat": 43.66756669999999,
+            "lng": -79.39086019999999,
+            "edges": [
+                {
+                    "neighbor": "Burwash Hall",
+                    "distance": 134,
+                    "duration": 109,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Student Centre",
+                    "distance": 170,
+                    "duration": 142,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Isabel Bader Theatre",
+                    "distance": 204,
+                    "duration": 166,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Margaret Addison Hall",
+                    "distance": 207,
+                    "duration": 170,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Birge-Carnegie Library",
+                    "distance": 243,
+                    "duration": 198,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Sam Sorbara Hall",
+            "lat": 43.6657197,
+            "lng": -79.38896070000001,
+            "edges": [
+                {
+                    "neighbor": "Brennan Hall",
+                    "distance": 113,
+                    "duration": 94,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 108,
+                    "duration": 82,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 81,
+                    "duration": 61,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 74,
+                    "duration": 56,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Odette (Louis) Hall",
+                    "distance": 56,
+                    "duration": 51,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Phelan House",
+                    "distance": 39,
+                    "duration": 32,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Sandford Fleming Building",
+            "lat": 43.6600106,
+            "lng": -79.3948345,
+            "edges": [
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 65,
+                    "duration": 54,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Engineering Annex",
+                    "distance": 50,
+                    "duration": 42,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Haultain Building",
+                    "distance": 124,
+                    "duration": 99,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 148,
+                    "duration": 118,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rosebrugh Building",
+                    "distance": 159,
+                    "duration": 127,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "School of Continuing Studies",
+            "lat": 43.66671580000001,
+            "lng": -79.3999204,
+            "edges": [
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 158,
+                    "duration": 139,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Max Gluskin House",
+                    "distance": 163,
+                    "duration": 131,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College Residence",
+                    "distance": 167,
+                    "duration": 146,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College",
+                    "distance": 197,
+                    "duration": 163,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 207,
+                    "duration": 174,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "School of Graduate Studies",
+            "lat": 40.50211890000001,
+            "lng": -74.4501837,
+            "edges": [
+                {
+                    "neighbor": "370 Huron Street",
+                    "distance": 78545,
+                    "duration": 63895,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Founders House",
+                    "distance": 163935,
+                    "duration": 137868,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sussex Court",
+                    "distance": 227958,
+                    "duration": 187560,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Trinity College",
+                    "distance": 237401,
+                    "duration": 198577,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Regis College",
+                    "distance": 384711,
+                    "duration": 320650,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Schwartz Reisman Innovation Centre",
+            "lat": 43.6603284,
+            "lng": -79.38914539999999,
+            "edges": [
+                {
+                    "neighbor": "Banting Institute",
+                    "distance": 69,
+                    "duration": 57,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "88 College Street",
+                    "distance": 174,
+                    "duration": 145,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "700 University Avenue",
+                    "distance": 186,
+                    "duration": 177,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Leslie L. Dan Pharmacy Building",
+                    "distance": 217,
+                    "duration": 195,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "C. David Naylor Building",
+                    "distance": 282,
+                    "duration": 252,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Sidney Smith Hall",
+            "lat": 43.662523,
+            "lng": -79.39854249999999,
+            "edges": [
+                {
+                    "neighbor": "Clara Benson Building",
+                    "distance": 190,
+                    "duration": 177,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lash Miller Chemical Laboratories",
+                    "distance": 192,
+                    "duration": 170,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wetmore Hall",
+                    "distance": 210,
+                    "duration": 194,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sir Daniel Wilson Residence",
+                    "distance": 229,
+                    "duration": 211,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Macdonald-Mowat House",
+                    "distance": 233,
+                    "duration": 213,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Simcoe Hall",
+            "lat": 43.66090860000001,
+            "lng": -79.39595179999999,
+            "edges": [
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 81,
+                    "duration": 65,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "J. Robert S. Prichard Alumni House",
+                    "distance": 179,
+                    "duration": 148,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gerstein Science Information Centre",
+                    "distance": 218,
+                    "duration": 176,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "45 St. George Street",
+                    "distance": 233,
+                    "duration": 184,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Galbraith Building",
+                    "distance": 235,
+                    "duration": 185,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Sir Daniel Wilson Residence",
+            "lat": 43.6625169,
+            "lng": -79.3974763,
+            "edges": [
+                {
+                    "neighbor": "J. Robert S. Prichard Alumni House",
+                    "distance": 114,
+                    "duration": 87,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lash Miller Chemical Laboratories",
+                    "distance": 95,
+                    "duration": 84,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Macdonald-Mowat House",
+                    "distance": 135,
+                    "duration": 107,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sidney Smith Hall",
+                    "distance": 230,
+                    "duration": 206,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Myhal Centre for Engineering Innovation & Entrepreneurship",
+                    "distance": 233,
+                    "duration": 182,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Soldiers' Tower",
+            "lat": 43.6635286,
+            "lng": -79.39523729999999,
+            "edges": [
+                {
+                    "neighbor": "Louis B. Stewart Observatory",
+                    "distance": 88,
+                    "duration": 70,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Back Campus Fields",
+                    "distance": 186,
+                    "duration": 155,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Massey College",
+                    "distance": 279,
+                    "duration": 245,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sir Daniel Wilson Residence",
+                    "distance": 293,
+                    "duration": 240,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "J. Robert S. Prichard Alumni House",
+                    "distance": 310,
+                    "duration": 253,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "St. Basil's Church",
+            "lat": 50.677989,
+            "lng": -3.5911884,
+            "edges": [
+                {
+                    "neighbor": "Wycliffe College",
+                    "distance": 172213,
+                    "duration": 142170,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "St. Hilda's College",
+                    "distance": 228514,
+                    "duration": 186982,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Residence",
+                    "distance": 315311,
+                    "duration": 260447,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Annesley Hall",
+                    "distance": 349630,
+                    "duration": 288499,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Windle House",
+                    "distance": 8919570,
+                    "duration": 7054543,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "St. Hilda's College",
+            "lat": 51.7488135,
+            "lng": -1.245152,
+            "edges": [
+                {
+                    "neighbor": "Wycliffe College",
+                    "distance": 82218,
+                    "duration": 67071,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Residence",
+                    "distance": 162523,
+                    "duration": 134720,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Annesley Hall",
+                    "distance": 165554,
+                    "duration": 135759,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "St. Basil's Church",
+                    "distance": 228214,
+                    "duration": 186710,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Windle House",
+                    "distance": 8716345,
+                    "duration": 6887731,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Stephenson House",
+            "lat": 42.4959292,
+            "lng": -83.1163505,
+            "edges": [
+                {
+                    "neighbor": "Faculty Club",
+                    "distance": 309264,
+                    "duration": 251828,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "246 Bloor Street West",
+                    "distance": 371084,
+                    "duration": 301346,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Loretto College",
+                    "distance": 378298,
+                    "duration": 307387,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "371 Bloor Street West",
+                    "distance": 380428,
+                    "duration": 309143,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "703 Spadina Avenue",
+                    "distance": 380477,
+                    "duration": 309179,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Student Commons",
+            "lat": 37.5464877,
+            "lng": -77.45331879999999,
+            "edges": [
+                {
+                    "neighbor": "Borden Building",
+                    "distance": 256757,
+                    "duration": 209253,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sussex Court",
+                    "distance": 364447,
+                    "duration": 300890,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sullivan House",
+                    "distance": 517026,
+                    "duration": 425096,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wilson Hall",
+                    "distance": 547653,
+                    "duration": 444948,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Graduate Studies",
+                    "distance": 550519,
+                    "duration": 452584,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Sullivan House",
+            "lat": 36.5583539,
+            "lng": -82.29867639999999,
+            "edges": [
+                {
+                    "neighbor": "Wilson Hall",
+                    "distance": 404531,
+                    "duration": 329283,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Borden Building",
+                    "distance": 414137,
+                    "duration": 340068,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Carr Hall",
+                    "distance": 442635,
+                    "duration": 364519,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Convocation Hall",
+                    "distance": 442652,
+                    "duration": 365009,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "More House",
+                    "distance": 451016,
+                    "duration": 372300,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Sussex Court",
+            "lat": 40.2864209,
+            "lng": -76.8162746,
+            "edges": [
+                {
+                    "neighbor": "School of Graduate Studies",
+                    "distance": 227920,
+                    "duration": 187417,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "370 Huron Street",
+                    "distance": 287558,
+                    "duration": 236555,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Student Commons",
+                    "distance": 364226,
+                    "duration": 300404,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Founders House",
+                    "distance": 372969,
+                    "duration": 310490,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Trinity College",
+                    "distance": 441143,
+                    "duration": 363819,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Teefy Hall",
+            "lat": 43.6656331,
+            "lng": -79.39083529999999,
+            "edges": [
+                {
+                    "neighbor": "59 Queen's Park Cres East",
+                    "distance": 43,
+                    "duration": 34,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "E.J. Pratt Library",
+                    "distance": 111,
+                    "duration": 94,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 119,
+                    "duration": 93,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 100,
+                    "duration": 79,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 107,
+                    "duration": 85,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Muzzo Family Alumni Hall",
+                    "distance": 126,
+                    "duration": 101,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Phelan House",
+                    "distance": 148,
+                    "duration": 120,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Toronto School of Theology",
+                    "distance": 137,
+                    "duration": 107,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Terrence Donnelly Centre for Cellular and Biomolecular Research",
+            "lat": 43.6600669,
+            "lng": -79.39307269999999,
+            "edges": [
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 150,
+                    "duration": 121,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Haultain Building",
+                    "distance": 68,
+                    "duration": 54,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 30,
+                    "duration": 24,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rosebrugh Building",
+                    "distance": 4,
+                    "duration": 4,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sandford Fleming Building",
+                    "distance": 163,
+                    "duration": 134,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Thomas Fisher Rare Book Library",
+            "lat": 43.6640736,
+            "lng": -79.3989838,
+            "edges": [
+                {
+                    "neighbor": "97 St. George Street",
+                    "distance": 122,
+                    "duration": 109,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Claude T. Bissell Building",
+                    "distance": 135,
+                    "duration": 110,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Clara Benson Building",
+                    "distance": 153,
+                    "duration": 135,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 163,
+                    "duration": 145,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Robarts Library",
+                    "distance": 178,
+                    "duration": 146,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Toronto School of Theology",
+            "lat": 43.6647132,
+            "lng": -79.3907334,
+            "edges": [
+                {
+                    "neighbor": "59 Queen's Park Cres East",
+                    "distance": 126,
+                    "duration": 107,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 97,
+                    "duration": 79,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Maritain House",
+                    "distance": 135,
+                    "duration": 114,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "McCorkell House",
+                    "distance": 88,
+                    "duration": 74,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Muzzo Family Alumni Hall",
+                    "distance": 49,
+                    "duration": 41,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Teefy Hall",
+                    "distance": 137,
+                    "duration": 115,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "123 St. George Street",
+            "lat": 43.6669391,
+            "lng": -79.3991883,
+            "edges": [
+                {
+                    "neighbor": "Woodsworth College",
+                    "distance": 81,
+                    "duration": 64,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 158,
+                    "duration": 150,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Woodsworth College Residence",
+                    "distance": 167,
+                    "duration": 137,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 206,
+                    "duration": 161,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 214,
+                    "duration": 169,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Trinity College",
+            "lat": 41.7477163,
+            "lng": -72.6905038,
+            "edges": [
+                {
+                    "neighbor": "Founders House",
+                    "distance": 73976,
+                    "duration": 60965,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Regis College",
+                    "distance": 152280,
+                    "duration": 125656,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Emmanuel College",
+                    "distance": 164997,
+                    "duration": 136367,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "370 Huron Street",
+                    "distance": 179829,
+                    "duration": 149861,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Graduate Studies",
+                    "distance": 237307,
+                    "duration": 198532,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Varsity Arena",
+            "lat": 43.66705289999999,
+            "lng": -79.3972706,
+            "edges": []
+        },
+        {
+            "name": "Varsity Pavilion",
+            "lat": 43.6664392,
+            "lng": -79.39640039999999,
+            "edges": [
+                {
+                    "neighbor": "Gerald Larkin Building",
+                    "distance": 171,
+                    "duration": 134,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "George Ignatieff Theatre",
+                    "distance": 190,
+                    "duration": 153,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Centre for High Performance Sport",
+                    "distance": 203,
+                    "duration": 167,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Varsity Centre",
+                    "distance": 203,
+                    "duration": 169,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Massey College",
+                    "distance": 250,
+                    "duration": 197,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Varsity Centre",
+            "lat": 43.66705289999999,
+            "lng": -79.3972706,
+            "edges": [
+                {
+                    "neighbor": "Goldring Centre for High Performance Sport",
+                    "distance": 125,
+                    "duration": 102,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Goldring Centre for High Performance Sport",
+                    "distance": 125,
+                    "duration": 102,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gerald Larkin Building",
+                    "distance": 167,
+                    "duration": 136,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "George Ignatieff Theatre",
+                    "distance": 186,
+                    "duration": 155,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Munk School of Global Affairs & Public Policy at Trinity",
+                    "distance": 188,
+                    "duration": 155,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Victoria College",
+            "lat": 28.8154887,
+            "lng": -96.9809846,
+            "edges": [
+                {
+                    "neighbor": "More House",
+                    "distance": 1655085,
+                    "duration": 1341102,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Convocation Hall",
+                    "distance": 1665375,
+                    "duration": 1349713,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Knox College",
+                    "distance": 1770758,
+                    "duration": 1436593,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Health Sciences Building",
+                    "distance": 1879224,
+                    "duration": 1526361,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "121 St. George Street",
+                    "distance": 1933312,
+                    "duration": 1565464,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Wallberg Building",
+            "lat": 43.6591675,
+            "lng": -79.3952485,
+            "edges": [
+                {
+                    "neighbor": "Lassonde Mining Building",
+                    "distance": 145,
+                    "duration": 116,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Koffler Student Services Centre",
+                    "distance": 162,
+                    "duration": 144,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "D.L. Pratt Building",
+                    "distance": 167,
+                    "duration": 135,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Galbraith Building",
+                    "distance": 200,
+                    "duration": 171,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fields Institute for Research in Math Science",
+                    "distance": 204,
+                    "duration": 179,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Warren Stevens Building",
+            "lat": 43.6630539,
+            "lng": -79.4015228,
+            "edges": [
+                {
+                    "neighbor": "Graduate House",
+                    "distance": 138,
+                    "duration": 121,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Fasken Martineau Building",
+                    "distance": 151,
+                    "duration": 134,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Clara Benson Building",
+                    "distance": 164,
+                    "duration": 131,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "665 Spadina Avenue",
+                    "distance": 183,
+                    "duration": 161,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Ramsay Wright Laboratories",
+                    "distance": 217,
+                    "duration": 174,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Wetmore Hall",
+            "lat": 43.6623282,
+            "lng": -79.4003101,
+            "edges": [
+                {
+                    "neighbor": "Clara Benson Building",
+                    "distance": 113,
+                    "duration": 92,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Ramsay Wright Laboratories",
+                    "distance": 194,
+                    "duration": 159,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sidney Smith Hall",
+                    "distance": 210,
+                    "duration": 185,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Earth Sciences Centre",
+                    "distance": 235,
+                    "duration": 184,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Bancroft Building",
+                    "distance": 236,
+                    "duration": 185,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Whitney Hall",
+            "lat": 47.7162435,
+            "lng": -116.9254277,
+            "edges": [
+                {
+                    "neighbor": "Cumberland House",
+                    "distance": 1554929,
+                    "duration": 1254733,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Graham Library",
+                    "distance": 1854718,
+                    "duration": 1516590,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Mechanical Engineering Building",
+                    "distance": 2576918,
+                    "duration": 2087186,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Knox College",
+                    "distance": 2666298,
+                    "duration": 2159343,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Gage Building",
+                    "distance": 2784472,
+                    "duration": 2257966,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Wilson Hall",
+            "lat": 33.9361613,
+            "lng": -80.4044262,
+            "edges": [
+                {
+                    "neighbor": "Borden Building",
+                    "distance": 292480,
+                    "duration": 237433,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Sullivan House",
+                    "distance": 404492,
+                    "duration": 331273,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Convocation Hall",
+                    "distance": 406600,
+                    "duration": 331976,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "More House",
+                    "distance": 416191,
+                    "duration": 340105,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Student Commons",
+                    "distance": 547576,
+                    "duration": 444863,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Windle House",
+            "lat": 19.183885,
+            "lng": 72.841208,
+            "edges": [
+                {
+                    "neighbor": "Burwash Residence",
+                    "distance": 8629572,
+                    "duration": 6921693,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "St. Hilda's College",
+                    "distance": 8715056,
+                    "duration": 6887560,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Annesley Hall",
+                    "distance": 8771089,
+                    "duration": 6933436,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Wycliffe College",
+                    "distance": 8795089,
+                    "duration": 6952631,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "St. Basil's Church",
+                    "distance": 8917909,
+                    "duration": 7054332,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Woodsworth College",
+            "lat": 43.6663161,
+            "lng": -79.3990297,
+            "edges": [
+                {
+                    "neighbor": "Claude T. Bissell Building",
+                    "distance": 132,
+                    "duration": 112,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College",
+                    "distance": 133,
+                    "duration": 121,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Innis College Student Residence",
+                    "distance": 128,
+                    "duration": 101,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Rotman School of Management",
+                    "distance": 120,
+                    "duration": 93,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "123 St. George Street",
+                    "distance": 81,
+                    "duration": 67,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Woodsworth College Residence",
+            "lat": 43.6674139,
+            "lng": -79.3992146,
+            "edges": [
+                {
+                    "neighbor": "Enrolment Services",
+                    "distance": 143,
+                    "duration": 139,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Jackman Humanities Building",
+                    "distance": 72,
+                    "duration": 79,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Munk School of Global Affairs & Public Policy at Trinity",
+                    "distance": 119,
+                    "duration": 93,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "School of Continuing Studies",
+                    "distance": 167,
+                    "duration": 143,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "123 St. George Street",
+                    "distance": 167,
+                    "duration": 132,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Wycliffe College",
+            "lat": 51.7433095,
+            "lng": -2.2791077,
+            "edges": [
+                {
+                    "neighbor": "St. Hilda's College",
+                    "distance": 82218,
+                    "duration": 67039,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "St. Basil's Church",
+                    "distance": 172046,
+                    "duration": 142599,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Annesley Hall",
+                    "distance": 183866,
+                    "duration": 151652,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Burwash Residence",
+                    "distance": 236041,
+                    "duration": 194155,
+                    "mode": "walking"
+                },
+                {
+                    "neighbor": "Windle House",
+                    "distance": 8796378,
+                    "duration": 6952796,
+                    "mode": "walking"
+                }
+            ]
+        },
+        {
+            "name": "Keep@Downsview",
+            "lat": 43.781321,
+            "lng": -79.463719,
+            "edges": [
+                {
+                    "neighbor": "1 Spadina Crescent",
+                    "distance": 17086,
+                    "duration": 2106,
+                    "mode": "driving"
+                },
+                {
+                    "neighbor": "Robarts Library",
+                    "distance": 16848,
+                    "duration": 2113,
+                    "mode": "driving"
+                },
+                {
+                    "neighbor": "Gerstein Science Information Center",
+                    "distance": 17900,
+                    "duration": 2330,
+                    "mode": "driving"
+                },
+                {
+                    "neighbor": "John M. Kelly Library",
+                    "distance": 17823,
+                    "duration": 2305,
+                    "mode": "driving"
+                },
+                {
+                    "neighbor": "Ontario Institute for Studies in Education",
+                    "distance": 16722,
+                    "duration": 2060,
+                    "mode": "driving"
+                }
+            ]
+        }
+    ]
+}
