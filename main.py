@@ -185,10 +185,10 @@ if __name__ == '__main__':
     if not os.path.exists("templates"):
         os.mkdir("templates")
     app.run(debug=True)
-    import python_ta
-
-    python_ta.check_all(config={
-        'max-line-length': 120,
-        'disable': ['E1136', 'W0221'],
-        'max-nested-blocks': 4
-    })
+    # import python_ta
+    #
+    # python_ta.check_all(config={
+    #     'max-line-length': 120,
+    #     'disable': ['E1136', 'W0221'],
+    #     'max-nested-blocks': 4
+    # })
