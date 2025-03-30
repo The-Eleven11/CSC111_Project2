@@ -37,7 +37,7 @@ def index():
     result_html = ""
     if last_result:
         result_html = f"<b>Path:</b> {' → '.join(last_result['path'])}<br>" \
-                      f"<b>Duration:</b> {last_result['distance']} seconds<br>" \
+                      f"<b>Duration:</b> {last_result['distance']} min<br>" \
                       f"{last_result['message']}"
 
     js_code = f"""
@@ -91,7 +91,7 @@ def calculate():
 
     simp_graph = graph.generate_complete_graph(nodes)
     # distance = graph.comp_path(path)
-    distance = simp_graph.comp_path(nodes)
+    distance = simp_graph.comp_path(nodes) / 60
     # try:
     #     distance = graph.comp_path(path)
     # except Exception as e:
