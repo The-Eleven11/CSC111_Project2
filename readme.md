@@ -14,8 +14,6 @@ To protect privacy, we delete our Google map API key in `generate_graph_json.py`
 
 Please **ensure** that there is a folder called `templates` in the working environment. It will store our temporary HTML file for the website
 
-
-
 ### Launch Guide
 
 To begin, you can just run `main.py` in PyCharm or in the terminal(recommended):
@@ -29,8 +27,6 @@ Then visit `http://127.0.0.1:5000/` in your browser. The map of UofT and the mar
 
 > We've tested it on all platforms, so if you follow our guidelines, it's sure to run 😀
 
-
-
 ### Using guide
 
 The main function of our program is to find the quickest path that can go through all the places that you choose.
@@ -41,14 +37,8 @@ After you choose the places, click the `Calculate` button, the program will calc
 
 To calculate a new path, click `clear` bottom first, then follow the above guide again.
 
-
-
 ### Finally
 
 We hope you have fun with our program and that it helps you.
 
-
-
 > We would like to thank our Professor Sadia and the TAs for their guidance and help with this program; without them, there is no way we could have successfully completed this program.😊
-
-
