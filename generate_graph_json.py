@@ -6,7 +6,7 @@ import math
 import googlemaps
 
 
-API_KEY = "AIzaSyCMrdIE9QMvWbCjr54i0VfakzhdawOGEbY"
+API_KEY = "YOUR KEY"
 gmaps = googlemaps.Client(key=API_KEY)
 
 
