@@ -97,12 +97,24 @@ class _Vertex:
 
         # unfinished test
         """
+        # nearest = float('inf')
+        # result = ()     # used for store vertex data
+        # for neighbour in self.neighbours:
+        #     if self.neighbours[neighbour][0] < nearest and neighbour.item not in visited:
+        #         nearest = self.neighbours[neighbour][0]
+        #         result = neighbour, self.neighbours[neighbour][1]
+        # return result
         nearest = float('inf')
-        result = ()     # used for store vertex data
+        result = (None, [])
         for neighbour in self.neighbours:
-            if self.neighbours[neighbour][0] < nearest and neighbour.item not in visited:
-                nearest = self.neighbours[neighbour][0]
-                result = neighbour, self.neighbours[neighbour][1]
+            distance, mid_path = self.neighbours[neighbour]
+            # 如果邻居本身或中间路径中的节点有已访问的，就跳过
+            if neighbour.item in visited or any(m in visited for m in mid_path):
+                continue
+
+            if distance < nearest:
+                nearest = distance
+                result = (neighbour, mid_path)
         return result
 
 
@@ -280,7 +292,7 @@ class Graph:
                         return True
             return False
 
-    def comp_path(self, items: list) -> int:
+    def comp_path(self, path: list) -> int:
         """
         compute the length of path stored in list, order matter
         return ValueError if any of nearby vertices are not adjacent
@@ -295,12 +307,12 @@ class Graph:
         7
         """
         length_so_far = 0
-        for i in range(len(items) - 1):
-            if not self.connected(items[i], items[i + 1]):
+        for i in range(len(path) - 1):
+            if not self.connected(path[i], path[i + 1]):
                 raise ValueError
             else:
-                vertex1 = self._vertices[items[i]]
-                vertex2 = self._vertices[items[i + 1]]
+                vertex1 = self._vertices[path[i]]
+                vertex2 = self._vertices[path[i + 1]]
                 part_length = vertex1.neighbours[vertex2][0]
                 length_so_far += part_length
         # total_length = 0
@@ -326,55 +338,86 @@ class Graph:
         3. stop until every destination is reached
     """
 
-    def greedy_dijkstra(self, start: Any, targets: list[Any]) -> list:
-        """
-        input the graph firstly, and transform it as a complete graph, only targets are comprehensively to be passed
-        path start at 'start'
-        >>> g = Graph()
-        >>> g.add_vertex('A')
-        >>> g.add_vertex('B')
-        >>> g.add_vertex('C')
-        >>> g.add_vertex('D')
-        >>> g.add_vertex('E')
-        >>> g.add_vertex('F')
-        >>> g.add_vertex('G')
-        >>> g.add_edge('A', 'B', 2)
-        >>> g.add_edge('A', 'C', 5)
-        >>> g.add_edge('B', 'D', 1)
-        >>> g.add_edge('B', 'E', 3)
-        >>> g.add_edge('C', 'E', 2)
-        >>> g.add_edge('C', 'F', 6)
-        >>> g.add_edge('D', 'G', 4)
-        >>> g.add_edge('E', 'G', 1)
-        >>> g.add_edge('F', 'G', 3)
-        >>> g.greedy_dijkstra('A', ['A', 'B', 'C'])
-        ['A', 'B', 'E', 'C']
-        >>> g.comp_path(g.greedy_dijkstra('A', ['A', 'B', 'C']))
-        7
+    # def greedy_dijkstra(self, start: Any, targets: list[Any]) -> list:
+    #     """
+    #     input the graph firstly, and transform it as a complete graph, only targets are comprehensively to be passed
+    #     path start at 'start'
+    #     >>> g = Graph()
+    #     >>> g.add_vertex('A')
+    #     >>> g.add_vertex('B')
+    #     >>> g.add_vertex('C')
+    #     >>> g.add_vertex('D')
+    #     >>> g.add_vertex('E')
+    #     >>> g.add_vertex('F')
+    #     >>> g.add_vertex('G')
+    #     >>> g.add_edge('A', 'B', 2)
+    #     >>> g.add_edge('A', 'C', 5)
+    #     >>> g.add_edge('B', 'D', 1)
+    #     >>> g.add_edge('B', 'E', 3)
+    #     >>> g.add_edge('C', 'E', 2)
+    #     >>> g.add_edge('C', 'F', 6)
+    #     >>> g.add_edge('D', 'G', 4)
+    #     >>> g.add_edge('E', 'G', 1)
+    #     >>> g.add_edge('F', 'G', 3)
+    #     >>> g.greedy_dijkstra('A', ['A', 'B', 'C'])
+    #     ['A', 'B', 'E', 'C']
+    #     >>> g.comp_path(g.greedy_dijkstra('A', ['A', 'B', 'C']))
+    #     7
+    #
+    #     >>> g2 = Graph()
+    #     >>> g.add_vertex('A')
+    #     >>> g.add_vertex('B')
+    #     >>> g.add_vertex('C')
+    #     >>> g.add_edge('A', 'B', 2)
+    #     >>> g.add_edge('A', 'C', 5)
+    #     >>> g.greedy_dijkstra('A', ['A', 'B', 'C'])
+    #     ['A', 'B', 'A', 'C']
+    #     >>> g.comp_path(g.greedy_dijkstra('A', ['A', 'B', 'C']))
+    #     9
+    #     """
+    #     # using method to get the simplified complete graph based on targets
+    #     simp_comp_graph = self.generate_complete_graph(targets)
+    #     # start from the first vertex in simp_comp_graph, move to the nearest unreached vertex
+    #     path = [start]
+    #     visited = {start}
+    #     start_point_vertex = simp_comp_graph._vertices[start]
+    #     while not all(x in visited for x in targets):
+    #         next_point, new_path = start_point_vertex.get_nearest_path_unvisited(visited)
+    #         visited.add(next_point.item)
+    #         path.extend(new_path)
+    #         path.append(next_point.item)
+    #         start_point_vertex = simp_comp_graph._vertices[next_point.item]
+    #     return path
 
-        >>> g2 = Graph()
-        >>> g.add_vertex('A')
-        >>> g.add_vertex('B')
-        >>> g.add_vertex('C')
-        >>> g.add_edge('A', 'B', 2)
-        >>> g.add_edge('A', 'C', 5)
-        >>> g.greedy_dijkstra('A', ['A', 'B', 'C'])
-        ['A', 'B', 'A', 'C']
-        >>> g.comp_path(g.greedy_dijkstra('A', ['A', 'B', 'C']))
-        9
-        """
-        # using method to get the simplified complete graph based on targets
-        simp_comp_graph = self.generate_complete_graph(targets)
-        # start from the first vertex in simp_comp_graph, move to the nearest unreached vertex
-        path = [start]
-        visited = {start}
-        start_point_vertex = simp_comp_graph._vertices[start]
-        while not all(x in visited for x in targets):
-            next_point, new_path = start_point_vertex.get_nearest_path_unvisited(visited)
-            visited.add(next_point.item)
-            path.extend(new_path)
-            path.append(next_point.item)
-            start_point_vertex = simp_comp_graph._vertices[next_point.item]
+    def greedy_dijkstra(self, start: Any, targets: list[Any]) -> list:
+        visited = set()
+        current = start
+        path = [current]
+        visited.add(current)
+
+        while not all(t in visited for t in targets):
+            # Run dijkstra on original graph
+            dijkstra_paths = self.dijkstra(current)
+            # Find nearest unvisited target
+            min_target = None
+            min_path = None
+            min_cost = float('inf')
+            for t in targets:
+                if t not in visited and dijkstra_paths[t] is not None:
+                    cost = self.comp_path(dijkstra_paths[t])
+                    if cost < min_cost:
+                        min_cost = cost
+                        min_target = t
+                        min_path = dijkstra_paths[t]
+
+            if min_target is None:
+                break  # no reachable targets
+
+            # Add the new path, excluding current since it's already in path
+            path += min_path[1:]
+            visited.add(min_target)
+            current = min_target
+
         return path
 
     def get_Vertex(self, item: Any) -> _Vertex:
