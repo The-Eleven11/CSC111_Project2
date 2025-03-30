@@ -303,6 +303,17 @@ class Graph:
                 vertex2 = self._vertices[items[i + 1]]
                 part_length = vertex1.neighbours[vertex2][0]
                 length_so_far += part_length
+        # total_length = 0
+        # for i in range(len(items) - 1):
+        #     vertex1 = self._vertices[items[i]]
+        #     vertex2 = self._vertices[items[i + 1]]
+        #     if vertex2 in vertex1.neighbours:
+        #         part_length = vertex1.neighbours[vertex2][0]
+        #     else:
+        #         # 如果没有直接边，可以调用一个最短路径算法计算 vertex1 到 vertex2 之间的距离
+        #         part_length, _ = self.dijkstra(vertex1.item, vertex2.item)  # 假设 dijkstra 返回 (distance, path)
+        #     total_length += part_length
+
         return length_so_far
 
     # method 1

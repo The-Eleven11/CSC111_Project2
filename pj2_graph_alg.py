@@ -2,7 +2,6 @@
     this is the file that use to implement the algorithm related to graph
 """
 from typing import Any
-
 import pj2_graph
 
 
@@ -13,19 +12,19 @@ def greedy_dijkstra_method1(graph: pj2_graph.Graph, start: Any, destination: lis
     return graph.greedy_dijkstra(start, destination)
 
 # method 2
-
-
-"""
-desecription: 
-    always move to point that the rest path is the shortest
-exact steps:
-    1. construct a complete graph, using dijkstra to construct the weight between two non-adjacent vertices
-    2. compute the sum of result path for all other unvisitied vertices, if move to the nearby vertices,
-    3. move the the lowest sum vertex
-    4. stop until every destination is reached
-"""
-
-
+#
+#
+# """
+# desecription:
+#     always move to point that the rest path is the shortest
+# exact steps:
+#     1. construct a complete graph, using dijkstra to construct the weight between two non-adjacent vertices
+#     2. compute the sum of result path for all other unvisitied vertices, if move to the nearby vertices,
+#     3. move the the lowest sum vertex
+#     4. stop until every destination is reached
+# """
+#
+#
 def greedy_dijkstra_method2(graph: pj2_graph.Graph, start: Any, destination: list[Any]) -> list:
     """
     as shown above
