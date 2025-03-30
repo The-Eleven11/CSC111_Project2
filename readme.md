@@ -12,7 +12,11 @@ Note that Google Maps is **OPTIONAL**, because our json data is ready, you don't
 
 To protect privacy, we delete our Google map API key in `generate_graph_json.py`, so this program cannot run without the API key.  If you want to test the method, you can apply the key at [Google Maps Platform ](https://developers.google.com/maps). Our program will not call the API key to many times, even not over the free trial limit.
 
+Please **ensure** that there is a folder called `templates` in the working environment. It will store our temporary HTML file for the website
 
+
+
+### Launch Guide
 
 To begin, you can just run `main.py` in PyCharm or in the terminal(recommended):
 
