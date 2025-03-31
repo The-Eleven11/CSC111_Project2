@@ -30,8 +30,6 @@ def batch_distance_matrix(origins, destinations, mode="walking", max_elements=10
 
     Returns a dictionary where the keys are the origin strings (e.g. "lat,lng")
     and the values are lists of tuples (destination, distance, duration).
-
-    IMPORTANT NOTICE: THIS PART DID WITH HELP WITH CHATGPT
     """
     candidate_edges = {origin: [] for origin in origins}
     batch_size = int(math.floor(math.sqrt(max_elements)))
@@ -65,14 +63,12 @@ def batch_distance_matrix(origins, destinations, mode="walking", max_elements=10
     return candidate_edges
 
 
-
 buildings = []
 with open("buildings.csv", newline="") as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         if row:
             buildings.append(row[0].strip())
-
 
 
 special_building = "Keep@Downsview, Toronto, ON, Canada"
@@ -110,7 +106,6 @@ candidate_edges_by_coord = batch_distance_matrix(
 
 ####################################################################################################################
 # Convert the candidate edges so that keys are building names rather than coordinate strings.
-# THIS PART DID WITH CHATGPT
 candidate_edges = {b: [] for b in ordered_buildings}
 for origin_coord, edges in candidate_edges_by_coord.items():
     origin_building = coord_to_building.get(origin_coord)
@@ -174,7 +169,6 @@ if special_building in nodes:
             duration = element["duration"]["value"]
             edge = {"neighbor": nb, "distance": distance, "duration": duration, "mode": "driving"}
             nodes[special_building]["edges"].append(edge)
-#################################################################################################
 
 
 #OUTPUT JSON File
