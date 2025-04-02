@@ -171,3 +171,121 @@ class Graph:
             if item2 not in self._vertices:
                 self.add_vertex(item2)
             self.add_edge(item1, item2, 1)
+
+import heapq
+from typing import Any, Optional
+
+class _Vertex:
+    def __init__(self, item: Any) -> None:
+        self.item = item
+        self.neighbours = {}
+
+    def __hash__(self):
+        return hash(self.item)
+
+    def __eq__(self, other):
+        return isinstance(other, _Vertex) and self.item == other.item
+
+class Graph:
+    def __init__(self) -> None:
+        self._vertices = {}
+
+    def add_vertex(self, item: Any) -> None:
+        self._vertices[item] = _Vertex(item)
+
+    def add_edge(self, item1: Any, item2: Any, weight: int, path: Optional[list] = None) -> None:
+        if item1 in self._vertices and item2 in self._vertices:
+            v1, v2 = self._vertices[item1], self._vertices[item2]
+            path = path if path else []
+            v1.neighbours[v2] = (weight, path)
+            v2.neighbours[v1] = (weight, path)
+        else:
+            raise ValueError
+
+    def shortest_path(self, start: Any, end: Any) -> list[Any]:
+        if start not in self._vertices or end not in self._vertices:
+            return []
+        pq, visited = [(0, start, [])], set()
+        while pq:
+            cost, current, path = heapq.heappop(pq)
+            if current in visited:
+                continue
+            visited.add(current)
+            path = path + [current]
+            if current == end:
+                return path
+            for neighbor, (weight, _) in self._vertices[current].neighbours.items():
+                if neighbor.item not in visited:
+                    heapq.heappush(pq, (cost + weight, neighbor.item, path))
+        return []
+
+    def is_connected(self) -> bool:
+        if not self._vertices:
+            return True
+        return len(self._dfs(next(iter(self._vertices)))) == len(self._vertices)
+
+    def _dfs(self, start: Any) -> set:
+        stack, visited = [start], set()
+        while stack:
+            v = stack.pop()
+            if v not in visited:
+                visited.add(v)
+                stack.extend(neighbor.item for neighbor in self._vertices[v].neighbours)
+        return visited
+
+    def has_cycle(self) -> bool:
+        visited = set()
+        for vertex in self._vertices:
+            if vertex not in visited:
+                if self._dfs_cycle(vertex, None, visited):
+                    return True
+        return False
+
+    def _dfs_cycle(self, current: Any, parent: Any, visited: set) -> bool:
+        visited.add(current)
+        for neighbor in self._vertices[current].neighbours:
+            if neighbor.item not in visited:
+                if self._dfs_cycle(neighbor.item, current, visited):
+                    return True
+            elif neighbor.item != parent:
+                return True
+        return False
+
+    def minimum_spanning_tree(self) -> list[tuple[Any, Any, int]]:
+        if not self._vertices:
+            return []
+        start, mst, visited = next(iter(self._vertices)), [], {start}
+        edges = [(weight, start, neighbor.item) for neighbor, (weight, _) in self._vertices[start].neighbours.items()]
+        heapq.heapify(edges)
+        while edges:
+            weight, v1, v2 = heapq.heappop(edges)
+            if v2 not in visited:
+                visited.add(v2)
+                mst.append((v1, v2, weight))
+                for neighbor, (w, _) in self._vertices[v2].neighbours.items():
+                    if neighbor.item not in visited:
+                        heapq.heappush(edges, (w, v2, neighbor.item))
+        return mst if len(visited) == len(self._vertices) else []
+
+    def get_degree(self, item: Any) -> int:
+        """Return the degree of the given vertex."""
+        if item in self._vertices:
+            return len(self._vertices[item].neighbours)
+        raise ValueError("Vertex not found")
+
+    def is_bipartite(self) -> bool:
+        """Return whether the graph is bipartite."""
+        color = {}
+        for vertex in self._vertices:
+            if vertex not in color:
+                if not self._bipartite_dfs(vertex, color, True):
+                    return False
+        return True
+
+    def _bipartite_dfs(self, v: Any, color: dict, c: bool) -> bool:
+        """Helper method to check bipartiteness using DFS."""
+        if v in color:
+            return color[v] == c
+        color[v] = c
+        return all(self._bipartite_dfs(neighbor.item, color, not c) for neighbor in self._vertices[v].neighbours)
+
